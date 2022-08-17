@@ -24,6 +24,10 @@ body{
 .header .logo{
     padding: 10px 0 0 10px;
 }
+.logo a:hover{
+    color: rgba(82, 17, 82, 0.911);
+    transition: all 1.3s;
+}
 .logo a{
     text-decoration: none;
     color: aliceblue;
@@ -38,28 +42,15 @@ body{
     list-style: none;
     display: inline-block;
 }
+
 .barra li a{
     text-decoration: none;
     color: aliceblue;
 }
-
-    /* .barra a:hover{
-    color: rgb(101, 5, 190);
+.barra li a:hover{
+    color:  rgba(82, 17, 82, 0.911);
+    transition: all 1.3s;
 }
-.barra .temporadas{
-    display: none;
-}
-.barra .temporadas li{
-    display: block;
-}
-.barra .temporadas a{
-    text-decoration: none;
-    color: aliceblue;
-}
-.barra li:hover .temporadas{
-    display: block;
-} */
-
 
 /* --------------------------INDEX------------------------- */
 /* --------------------------Main-------------------- */
