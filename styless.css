@@ -5,183 +5,64 @@
     box-sizing: border-box;
 }
 /* -------------Body---------------- */
+/*  -------------Header --------------  */
 body{
     font-family: 'Bebas Neue', cursive;
-    background-color: #4158D0;
-    background-image: linear-gradient(79deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+.navbar-brand{
+    color: aliceblue;
+    font-size: 2rem;
     
 }
-/*  -------------Header --------------  */
-.header{
-    width: 100%;
-    height: 10vh;
-    background-color: rgba(0, 0, 0, 0.904);
-    font-size: 16px;
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
+.navbar-brand:hover{
+    color: #4307cf;
+    transition: all 800ms;
 }
-.header .logo{
-    padding: 10px 0 0 10px;
+.bgnav{
+    background-color: rgb(19, 18, 18);
 }
-.logo a:hover{
-    color: rgba(82, 17, 82, 0.911);
-    transition: all 1.3s;
+.menubar{
+    color:aliceblue;
 }
-.logo a{
-    text-decoration: none;
-    color: aliceblue;
-}
-.header .barra{
-    padding-left: 20px; 
-    display: flex;
-    align-items: center;
-}
-.barra li{
-    font-size: 16px ;
-    list-style: none;
-    display: inline-block;
-}
+.nav-item a{
+    color:#4307cf;
 
-.barra li a{
-    text-decoration: none;
-    color: aliceblue;
 }
-.barra li a:hover{
-    color:  rgba(82, 17, 82, 0.911);
-    transition: all 1.3s;
+.menubar:active{
+    color: #3605a8;
 }
 
 /* --------------------------INDEX------------------------- */
-/* --------------------------Main-------------------- */
-.main{
-    width: 100%;  
-    padding-bottom: 20px;
-    background-image: url("https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
-    background-size: cover;
-    background-position: center;
+.jumbotron{
+    background-image: url("https://cdn.pixabay.com/photo/2019/12/04/05/17/band-4671748_960_720.jpg");
+    background-position: 50% 60%;
     background-repeat: no-repeat;
-    font-family:'Bebas Neue', cursive;  
+    background-size: cover;
+    border-radius: 0;
 }
-/* -------------------------Eslogan--------------------- */
-.eslogan{
-    color: aliceblue;
-    padding-top: 30px;
-    width: 100%;
-    height: 50px;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-    text-shadow: 1px 1px 5px black;
-    animation: eslogan 2000ms 500ms infinite ease-in-out;
+.jumbotron h1{
+    text-shadow: 1px 1px 1px black;
 }
-@keyframes eslogan {
-    0%{
-        color: rgb(94, 0, 94);
-    }
-    50%{
-        color: #4158D0;
-    }
-    100%{
-        color: aliceblue;
-    }
+.btnnav{
+    background-color: rgba(10, 10, 10, 0.87);
+    box-shadow: 1px 1px 3px black;
 }
-/* ------------------------------Cards------------------ */
-.card{
-    width: 100%;
-    height: 800px;
+.btnnav:hover{
+    background-color: orange;
+    transition: all 800ms;
 }
-/* .cards{
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-    padding-top: 40px;
-    
-}
-.cards .card{
-    width: 400px;
-    height: 300px;
-    border: 2px solid;
-    border-color: rgb(194, 95, 2);
-    border-radius: 5px;
-    background-color: rgba(29, 28, 28, 0.911);
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    overflow: hidden;
-    text-align: center;
+.btnnav a{
+    color:aliceblue;
+    text-decoration: none;
 }
 
-.img1{
-    display: flex;
-    justify-content: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    
-}
-.img2{
-    background-image: url(Imagenes\hd-wallpaper-1056764.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: auto;
-}
-.img3{
-    display: flex;
-    justify-content: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    
-}
-.cards img:hover{
-    transform: scale(1.1);
-    transition: all 1.1s;
-    padding-bottom: 15px;
-} */
+/* --------------------------Main-------------------- */
+
+/* -------------------------Eslogan--------------------- */
+
+/* ------------------------------Cards------------------ */
 
 /* interes */
-.interes{
-    width: 100%;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-}
-.int1{
-    width: 100%;
-    height: 200px;
-    padding: 20px;
-    background-color: rgb(12, 12, 12);
-    display: flex;
-    justify-content: space-between;
-}
-.inttext{
-    width: 50%;
-    justify-content: flex-start;
-    font-size: 22px;
-    color: aliceblue;
-}
-.int1 h1{
-    font-size: 30px;
-    text-align: center;
-    color: aliceblue;
-    text-align: center;
-}
-.intimg{
-    background-image: url("https://images.unsplash.com/photo-1548377769-58bf76a16451?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
-    background-size: cover;
-    background-position: center;
-    width: 400px;
-    border: 2px solid black;
-    display: flex;
-    justify-content: flex-end;
-}
 
 
 /* --------------------------Artistas2022---------------------------- */
