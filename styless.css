@@ -74,7 +74,18 @@ body{
     justify-content: center;
     flex-flow: row wrap;
     text-shadow: 1px 1px 5px black;
-    
+    animation: eslogan 2000ms 500ms infinite ease-in-out;
+}
+@keyframes eslogan {
+    0%{
+        color: rgb(94, 0, 94);
+    }
+    50%{
+        color: #4158D0;
+    }
+    100%{
+        color: aliceblue;
+    }
 }
 /* ------------------------------Cards------------------ */
 .card{
