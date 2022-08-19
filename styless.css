@@ -210,7 +210,6 @@ body{
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    
     box-shadow: 2px 2px 5px black;
     background-image: url(https://images.unsplash.com/photo-1560800452-f2d475982b96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
     background-position: center;
@@ -247,6 +246,10 @@ body{
 .preg h2{
     font-size: 20px;
     text-align: center;
+}
+.preg h2:hover{
+    transform: scale(1.1);
+    transition: all 0.8s;
 }
 .preg p{
     display: flex;
@@ -504,6 +507,22 @@ body{
 }
 .footer p{
     font-size: 20px;
+}
+.ig:hover{
+    color: rgb(121, 0, 121);
+    transition: all 0.8s;
+}
+.fb:hover{
+    color: #4158D0;
+    transition: all 0.8s;
+}
+.yt:hover{
+    color: red;
+    transition: all 0.8s;
+}
+.sp:hover{
+    color: rgb(5, 151, 5);
+    transition: all 0.8s;
 }
 .mediacontainer a{
     text-decoration: none;
