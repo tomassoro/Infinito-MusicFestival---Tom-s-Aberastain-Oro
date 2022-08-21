@@ -1,40 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /* -------------Body---------------- */
 /*  -------------Header --------------  */
-body{
+body {
     font-family: 'Bebas Neue', cursive;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
 }
-.navbar-brand{
+
+.navbar-brand {
     color: aliceblue;
     font-size: 3rem;
     font-weight: bolder;
 }
-.navbar-brand:hover{
-    color: #4307cf;
-    transition: all 800ms;
+
+.navbar-brand:hover {
+    animation: colorbrand 1200ms infinite ease-out;
 }
-.bgnav{
-    background-color: rgba(19, 18, 18, 0.932);
+@keyframes colorbrand {
+    0%{
+        color: aliceblue;
+    }
+    50%{
+        color: #C850C0;
+    }
+    100%{
+        color: #FFCC70;
+    }
 }
-.menubar{
-    color:aliceblue;
+#collapsibleNavbar{
+    justify-content: flex-end;    
 }
-.nav-item a{
-    color:rgb(224, 184, 2);
+.bgnav {
+    background-color: rgba(0, 0, 0, 0.445);
+}
+
+.menubar {
+    color: aliceblue;
+}
+
+.nav-item a {
+    color: aliceblue;
     font-size: 1.5rem;
 
 }
-.menubar:active{
+.nav-item a:hover{
+    color: rgb(224, 184, 2) ;
+    transition: all 800ms;
+}
+
+.menubar:active {
     color: #3605a8;
 }
+
 /* --------------------------INDEX------------------------- */
 /* jumbotron */
-.jumbotron{
+.jumbotron {
     background-image: url("https://cdn.pixabay.com/photo/2019/12/04/05/17/band-4671748_960_720.jpg");
     background-position: 50% 60%;
     background-repeat: no-repeat;
@@ -43,44 +71,78 @@ body{
     height: 60vh;
     margin: 0;
 }
-.jumbotron h1{
+
+.jumbotron h1 {
     text-shadow: 1px 1px 1px black;
     font-size: 3rem;
     color: rgb(224, 184, 2);
 }
-.jumbotron p{
+
+.jumbotron p {
     font-size: 1.5rem;
     color: black;
 }
-.btnjum{
+
+.btnjum {
     background-color: rgba(10, 10, 10, 0.87);
     box-shadow: 1px 1px 3px black;
 }
-.btnjum a{
-    color:aliceblue;
+
+.btnjum a {
+    color: aliceblue;
     text-decoration: none;
 }
-.btnjum:hover{
+
+.btnjum:hover {
     background-color: orange;
     transition: all 800ms;
 }
 
 /* --------------------------section-------------------- */
-.container-fluid{
+.interes {
+    margin-top: 20vh;
     width: 100% auto;
     background-color: rgb(17, 17, 17);
     color: aliceblue;
 }
-.desc h2{
-    text-align: center;
-    
 
+.desc h2 {
+    text-align: center;
+    padding: 20px;
 }
-.ar1{
+.descimg{
+    border-radius: 2px ;
+    box-shadow: 2px 2px 3px black;
+}
+.al1{
+    order: -1;
+}
+.ar1 {
     height: 40vh;
     background-image: url("https://images.unsplash.com/photo-1632312045004-494c905db7d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
     background-position: center;
-    background-size: cover;   
+    background-size: cover;
+    order: 0;
+}
+.ar2{
+    order: 1;
+}
+.al2 {
+    height: 40vh;
+    background-image: url("https://images.unsplash.com/photo-1628336707631-68131ca720c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-position: center;
+    background-size: cover;
+    order: 2;
+}
+.al3{
+    order: 3;
+}
+.ar3{
+    height: 40vh;
+    background-image: url("https://images.unsplash.com/photo-1520483691742-bada60a1edd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    background-position: center;
+    background-size: cover; 
+    order: 4;
 }
 
 /* -------------------------Eslogan--------------------- */
@@ -91,7 +153,7 @@ body{
 
 
 /* --------------------------Artistas2022---------------------------- */
-.artistas2022{
+.artistas2022 {
     min-height: calc(100vh - 20vh);
     width: 100%;
     padding-bottom: 20px;
@@ -103,12 +165,14 @@ body{
     justify-content: center;
     color: aliceblue;
 }
-.artistas2022 h2{
+
+.artistas2022 h2 {
     padding-top: 20px;
     font-size: 28px;
     display: flex;
 }
-.artistas2022 .artistcontainer{
+
+.artistas2022 .artistcontainer {
     width: 100%;
     height: 100%;
     display: flex;
@@ -116,14 +180,16 @@ body{
     justify-content: space-around;
     gap: 10px;
 }
-.artist{
+
+.artist {
     width: 20%;
     height: 30%;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
 }
-.artist .imgart{
+
+.artist .imgart {
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -132,8 +198,9 @@ body{
     background-position: center;
     background-size: cover;
 }
+
 /* ------------------Informacion---------------- */
-.informacion{
+.informacion {
     width: 100%;
     min-height: calc(100vh - 20vh);
     padding: 10px;
@@ -143,7 +210,8 @@ body{
     background-color: rgb(58, 58, 58);
     color: aliceblue;
 }
-.infocont{
+
+.infocont {
     width: auto;
     background-color: rgba(15, 15, 15, 0.877);
     margin: 10px 20px;
@@ -152,34 +220,39 @@ body{
     display: flex;
     flex-direction: column;
     font-size: 18px;
-    
+
 }
-.preg{
+
+.preg {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
 }
-.preg h2{
+
+.preg h2 {
     font-size: 20px;
     text-align: center;
 }
-.preg h2:hover{
+
+.preg h2:hover {
     transform: scale(1.1);
     transition: all 0.8s;
 }
-.preg p{
+
+.preg p {
     display: flex;
 }
 
 /* ----------------------IMAGENES---------------------------- */
-.navgal{
+.navgal {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 25px;
 }
-.navgal ul{
+
+.navgal ul {
     margin-top: 30px;
     background-color: rgb(33, 33, 34);
     border-radius: 2px;
@@ -188,91 +261,106 @@ body{
 
     display: flex;
     gap: 20px;
-    
-    
+
+
 }
-.navgal li{
+
+.navgal li {
     display: flex;
     color: aliceblue;
-    
+
 }
-.navgal a{
+
+.navgal a {
     text-decoration: none;
 }
-.navgal h2{
+
+.navgal h2 {
     display: flex;
     justify-content: center;
 }
-.imagenes{
+
+.imagenes {
     width: 100%;
     padding: 20px;
     display: grid;
 }
-.imagenes h2{
+
+.imagenes h2 {
     text-align: center;
     padding: 20px 0;
     color: aliceblue;
     text-shadow: 1px 1px 2px black;
 }
-.temporada{
+
+.temporada {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 200px);
-    
+
 }
-.galeria{   
+
+.galeria {
     border: 2px solid black;
     box-shadow: 2px 2px 5px black;
     filter: grayscale(100%);
     border-radius: 3px;
 }
-.galeria:hover{
+
+.galeria:hover {
     filter: grayscale(0%);
     transform: scale(1.03);
     transition: all 0.5s;
 }
-.item1{
+
+.item1 {
     background-image: url(imagenes/imagenes/nicholas-green-nPz8akkUmDI-unsplash.jpg);
     background-size: cover;
     background-position: 45% 26%;
 
 }
 
-.item2{
+.item2 {
     background-image: url(Imagenes/imagenes/nathan-fertig-IW5Bm4rB9OA-unsplash.jpg);
     background-size: cover;
 
 }
-.item3{
+
+.item3 {
     background-image: url(imagenes/imagenes/muneeb-syed-4_M8uIfPEZw-unsplash.jpg);
     background-size: cover;
     background-position: 35% 65%;
 
 }
-.item4{
+
+.item4 {
     background-image: url(imagenes/imagenes/jakob-owens-YSFk5awhcec-unsplash.jpg);
     background-size: cover;
 
 }
-.item5{
+
+.item5 {
     background-image: url(imagenes/imagenes/danny-howe-bn-D2bCvpik-unsplash.jpg);
     background-size: cover;
 
 }
-.item6{
+
+.item6 {
     background-image: url(imagenes/imagenes/colin-lloyd-W6_txbgkkeU-unsplash.jpg);
     background-size: cover;
     background-position: 45% 55%;
 
 }
-.item7{
+
+.item7 {
     background-image: url(imagenes/imagenes/colin-lloyd-5TGwSC4dHOU-unsplash.jpg);
     background-size: cover;
     background-position: 50% 45%;
 
 }
-.item8{
+
+.item8 {
     background-image: url(imagenes/imagenes/samuel-regan-asante-3BcNKoySAq0-unsplash.jpg);
     background-size: cover;
     background-position: 30% 55%;
@@ -362,7 +450,7 @@ body{
 
 /* -----Proximas Fechas---------------- */
 
-.containerfechas{
+.containerfechas {
     width: 100%;
     min-height: calc(100vh - 20vh);
     display: flex;
@@ -370,23 +458,26 @@ body{
     background-image: url("https://cdn.pixabay.com/photo/2016/09/10/11/11/musician-1658887_960_720.jpg");
     background-size: cover;
 }
-.containerfechas h2{
+
+.containerfechas h2 {
     width: 100%;
     height: 80px;
     padding: 20px 0 10px 10px;
     font-size: 40px;
     display: block;
-    text-align:left;
-    color:aliceblue;
+    text-align: left;
+    color: aliceblue;
 }
-.placecont{
+
+.placecont {
     width: 100%;
     padding: 0 10px 10px;
     gap: 5px;
     display: flex;
     flex-direction: column;
 }
-.place{
+
+.place {
     height: 33%;
     width: 100%;
     background-color: rgba(10, 10, 10, 0.918);
@@ -394,17 +485,20 @@ body{
     display: flex;
     flex-flow: column wrap;
 }
-.place h2{
+
+.place h2 {
     color: orange;
     font-size: 38px;
 }
-.infoplace{
+
+.infoplace {
     display: flex;
     width: 100%;
     padding-top: 10px;
-    flex-flow:column wrap;
+    flex-flow: column wrap;
 }
-.infoplace p{
+
+.infoplace p {
     font-size: 18px;
     color: aliceblue;
 }
@@ -412,9 +506,9 @@ body{
 
 
 /*  -------------Footer --------------  */
-.footer{
+.footer {
     width: 100%;
-    font-family:'Bebas Neue', cursive;
+    font-family: 'Bebas Neue', cursive;
     background-color: rgba(19, 18, 18, 0.966);
     color: aliceblue;
     display: flex;
@@ -422,26 +516,32 @@ body{
     justify-content: center;
     align-items: center;
 }
-.footer p{
+
+.footer p {
     font-size: 20px;
 }
-.ig:hover{
+
+.ig:hover {
     color: rgb(121, 0, 121);
     transition: all 0.8s;
 }
-.fb:hover{
+
+.fb:hover {
     color: #4158D0;
     transition: all 0.8s;
 }
-.yt:hover{
+
+.yt:hover {
     color: red;
     transition: all 0.8s;
 }
-.sp:hover{
+
+.sp:hover {
     color: rgb(5, 151, 5);
     transition: all 0.8s;
 }
-.mediacontainer a{
+
+.mediacontainer a {
     text-decoration: none;
     color: aliceblue;
     font-size: 30px;
@@ -451,20 +551,23 @@ body{
 /* --------------------------INDEX-------------------------- */
 /* --------------------------ARTISTAS-------------------------- */
 /* --------------------------INFORMACION-------------------------- */
-@media only screen and (min-width:435px) and (max-width:639px) { 
-    .header .barra{
+@media only screen and (min-width:435px) and (max-width:639px) {
+    .header .barra {
         display: flex;
         align-items: center;
-        padding-right: 20px;      
+        padding-right: 20px;
     }
+
     /* --------------------------IMAGENES-------------------------- */
 
-    .temporada{
+    .temporada {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(4, 200px);
     }
 }
+
 @media only screen and (min-width:640px) and (max-width: 799px) {
+
     /* .header{
         font-size: 22px;
     }
@@ -485,53 +588,62 @@ body{
         padding-top: 10px;
     } */
     /* --------------------------INFORMACION-------------------------- */
-    .infocont{
+    .infocont {
         font-size: 20px;
     }
-    .preg h2{
+
+    .preg h2 {
         font-size: 25;
     }
 
 
     /* --------------------------IMAGENES-------------------------- */
-    .temporada{
+    .temporada {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, 200px);
         grid-template-areas: "item1 item1 item3"
-                            "item4 item2 item2"
-                            "item5 item6 item8"
-                            "item7 item7 item7";
+            "item4 item2 item2"
+            "item5 item6 item8"
+            "item7 item7 item7";
     }
-    
-.item1{
-    grid-area: item1;
+
+    .item1 {
+        grid-area: item1;
+    }
+
+    .item2 {
+        grid-area: item2;
+    }
+
+    .item3 {
+        grid-area: item3;
+    }
+
+    .item4 {
+        grid-area: item4;
+    }
+
+    .item5 {
+        grid-area: item5;
+    }
+
+    .item6 {
+        grid-area: item6;
+    }
+
+    .item7 {
+        grid-area: item7;
+    }
+
+    .item8 {
+        grid-area: item8;
+    }
+
+
 }
 
-.item2{
-    grid-area: item2;
-}
-.item3{
-    grid-area: item3;
-}
-.item4{
-    grid-area: item4;
-}
-.item5{
-    grid-area: item5;
-}
-.item6{
-    grid-area: item6;
-}
-.item7{
-    grid-area: item7;
-}
-.item8{
-    grid-area: item8;
-}
-
-
-}
 @media only screen and (min-width:800px) and (max-width:1074px) {
+
     /* .header{
         font-size: 24px;
     }
@@ -555,145 +667,144 @@ body{
         font-size: 20px;
     } */
     /* --------------------------INFORMACION-------------------------- */
-    .infocont{
+    .infocont {
         font-size: 21px;
     }
-    .preg h2{
+
+    .preg h2 {
         font-size: 26px;
     }
+
     /* --------------------------IMAGENES-------------------------- */
-    .navgal{
+    .navgal {
         font-size: 30px;
     }
-    .imagenes h2{
+
+    .imagenes h2 {
         font-size: 25px;
     }
-    .temporada{
+
+    .temporada {
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(4, 200px);
-        
-        
+
+
         grid-template-areas: " item1 item1 item6 item3"
-                            "item4 item4 item5 item5"
-                            "item4 item4 item7 item7"
-                            "item8 item8 item2 item2"
-                            ;
+            "item4 item4 item5 item5"
+            "item4 item4 item7 item7"
+            "item8 item8 item2 item2"
+        ;
 
     }
-        
-    .item1{
-    grid-area: item1;
-    }
 
-    .item2{
-    grid-area: item2;
-    background-position: 50% 58%;
-    }
-    .item3{
-    grid-area: item3;
-    }
-    .item4{
-    grid-area: item4;
-    }
-    .item5{
-    grid-area: item5;
-    background-position: 50% 68%;
-    }
-    .item6{
-    grid-area: item6;
-    background-position: 50% 58%;
-    }
-    .item7{
-    grid-area: item7;
-    }
-    .item8{
-    grid-area: item8;
-    background-position: 50% 60%;
-    }
-    }
-@media only screen and (min-width:1075px) {
-    /* .header{
-        font-size: 30px;
-    }
-    .header .logo{
-        padding:  0 0 0 20px;
-    }
-    .header .barra{
-        justify-items: flex-end;
-        display: flex;
-        align-items: center;    
-        padding-right: 20px;
-        
-    }
-    .barra ul{
-        display: flex;
-        align-items: center;
-        gap: 15px;
-        padding-top: 10px;
-    }
-    .barra li{
-        font-size: 26px;
-    }
-    .footer{
-        height: 10vh;
-    } */
-    /* --------------------------INFORMACION-------------------------- */
-    .infocont{
-        font-size: 25px;
-    }
-    .preg h2{
-        font-size: 30px;
-    }
-    /* --------------------------IMAGENES-------------------------- */
-    .navgal{
-        font-size: 35px;
-    }
-    .imagenes h2{
-        font-size: 30px;
-    }
-    .temporada{
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(6, 200px);
-        grid-template-areas:    "item1 item1 item1 item6"
-                                "item1 item1 item1 item6"
-                                "item3 item7  item2  item2"
-                                "item3 item7 item5  item5"
-                                "item8 item4 item4 item4"
-                                "item8 item4 item4 item4";
-    }
-    .galeria:hover{
-        transform: scale(1.01);
-    }
-    
-    
-    .item1{
+    .item1 {
         grid-area: item1;
     }
-    
-    .item2{
+
+    .item2 {
         grid-area: item2;
+        background-position: 50% 58%;
     }
-    .item3{
+
+    .item3 {
         grid-area: item3;
     }
-    .item4{
+
+    .item4 {
+        grid-area: item4;
+    }
+
+    .item5 {
+        grid-area: item5;
+        background-position: 50% 68%;
+    }
+
+    .item6 {
+        grid-area: item6;
+        background-position: 50% 58%;
+    }
+
+    .item7 {
+        grid-area: item7;
+    }
+
+    .item8 {
+        grid-area: item8;
+        background-position: 50% 60%;
+    }
+}
+
+@media only screen and (min-width:1075px) {
+
+    /* --------------------------INFORMACION-------------------------- */
+    .infocont {
+        font-size: 25px;
+    }
+
+    .preg h2 {
+        font-size: 30px;
+    }
+
+    /* --------------------------IMAGENES-------------------------- */
+    .navgal {
+        font-size: 35px;
+    }
+
+    .imagenes h2 {
+        font-size: 30px;
+    }
+
+    .temporada {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 200px);
+        grid-template-areas: "item1 item1 item1 item6"
+            "item1 item1 item1 item6"
+            "item3 item7  item2  item2"
+            "item3 item7 item5  item5"
+            "item8 item4 item4 item4"
+            "item8 item4 item4 item4";
+    }
+
+    .galeria:hover {
+        transform: scale(1.01);
+    }
+
+
+    .item1 {
+        grid-area: item1;
+    }
+
+    .item2 {
+        grid-area: item2;
+    }
+
+    .item3 {
+        grid-area: item3;
+    }
+
+    .item4 {
         grid-area: item4;
         background-position: 50% 65%;
     }
-    .item5{
+
+    .item5 {
         grid-area: item5;
         background-position: 50% 55%;
     }
-    .item6{
+
+    .item6 {
         grid-area: item6;
     }
-    .item7{
+
+    .item7 {
         grid-area: item7;
     }
-    .item8{
+
+    .item8 {
         grid-area: item8;
     }
 
 }
+
 /* --------------------------INFORMACION-------------------------- */
 /* --------------------------PROXIMASFECHAS--------------------------*/
