@@ -97,13 +97,24 @@ body {
     background-color: orange;
     transition: all 800ms;
 }
+/* -----sponsors------- */
+h2{
+    padding-top: 20px;
+    text-align: center;
+}
+.carousel-item{
+    text-align: center;
+}
+.carousel-item img{
+    width:80px;
+}
 
 /* --------------------------section-------------------- */
 .interes {
-    margin-top: 20vh;
     width: 100% auto;
     background-color: rgb(17, 17, 17);
     color: aliceblue;
+    margin-top: 20px;
 }
 
 .desc h2 {
