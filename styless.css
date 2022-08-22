@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Bebas+Neue&display=swap');
 
 * {
     margin: 0;
@@ -13,6 +13,12 @@ body {
     background-color: #4158D0;
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 
+}
+h2{
+    padding: 20px 0 20px 0;
+    text-align: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight:600;
 }
 
 .navbar-brand {
@@ -39,7 +45,7 @@ body {
     justify-content: flex-end;    
 }
 .bgnav {
-    background-color: rgba(0, 0, 0, 0.445);
+    background-color: rgba(0, 0, 0, 0.699);
 }
 
 .menubar {
@@ -76,11 +82,15 @@ body {
     text-shadow: 1px 1px 1px black;
     font-size: 3rem;
     color: rgb(224, 184, 2);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 600;
 }
 
 .jumbotron p {
     font-size: 1.5rem;
     color: black;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight:600;
 }
 
 .btnjum {
@@ -98,23 +108,33 @@ body {
     transition: all 800ms;
 }
 /* -----sponsors------- */
-h2{
-    padding-top: 20px;
-    text-align: center;
+.carousel-inner{
+    margin-bottom: 40px;
 }
 .carousel-item{
     text-align: center;
+
 }
 .carousel-item img{
-    width:80px;
+    width:90px;
 }
-
+/* -------IFRAME------------ */
+.iframe{
+    text-align: center;
+}
+iframe{
+    box-shadow: 3px 3px 4px black;
+}
 /* --------------------------section-------------------- */
 .interes {
     width: 100% auto;
     background-color: rgb(17, 17, 17);
     color: aliceblue;
-    margin-top: 20px;
+    margin: 20px 0 20px 0;
+    padding-top: 10px ;
+}
+.row aside{
+    padding: 10px 0 10px 0;
 }
 
 .desc h2 {
@@ -155,12 +175,6 @@ h2{
     background-size: cover; 
     order: 4;
 }
-
-/* -------------------------Eslogan--------------------- */
-
-/* ------------------------------Cards------------------ */
-
-/* interes */
 
 
 /* --------------------------Artistas2022---------------------------- */
@@ -517,19 +531,20 @@ h2{
 
 
 /*  -------------Footer --------------  */
-.footer {
-    width: 100%;
+.footer{
     font-family: 'Bebas Neue', cursive;
-    background-color: rgba(19, 18, 18, 0.966);
+    background-color: rgba(19, 18, 18, 0.801);
     color: aliceblue;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    height: 20vh;
+    padding: 20px 0 10px 0;
 }
 
 .footer p {
     font-size: 20px;
+    text-align: center;
+}
+.footer .mediacontainer{
+    text-align: center; 
 }
 
 .ig:hover {
@@ -562,13 +577,10 @@ h2{
 /* --------------------------INDEX-------------------------- */
 /* --------------------------ARTISTAS-------------------------- */
 /* --------------------------INFORMACION-------------------------- */
-@media only screen and (min-width:435px) and (max-width:639px) {
-    .header .barra {
-        display: flex;
-        align-items: center;
-        padding-right: 20px;
-    }
+@media only screen and (min-width:576px) and (max-width:767px) {
 
+/* ---------------INDEX */
+/* ---IFRAME */
     /* --------------------------IMAGENES-------------------------- */
 
     .temporada {
@@ -577,8 +589,33 @@ h2{
     }
 }
 
-@media only screen and (min-width:640px) and (max-width: 799px) {
-
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* MD */
+/* ---------------INDEX */
+/* ---IFRAME */
+iframe{
+    width: 500px;
+    height: 250px;
+}
+/* ---INTERES */
+.ar1{
+    order: 0;
+}
+.al1{
+    order: -1;
+}
+.ar2{
+    order: 2;
+}
+.al2{
+    order: 1;    
+}
+.ar3{
+    order: 4;
+}
+.al3{
+    order: 3;    
+}
     /* .header{
         font-size: 22px;
     }
@@ -653,30 +690,33 @@ h2{
 
 }
 
-@media only screen and (min-width:800px) and (max-width:1074px) {
+@media only screen and (min-width:992px) and (max-width:1199px) {
+    /* LG */
 
-    /* .header{
-        font-size: 24px;
-    }
-    .header .logo{
-        padding:  0 0 0 10px;
-    }
-    .header .barra{
-        justify-items: flex-end;
-        display: flex;
-        align-items: center;    
-        padding-right: 20px;
-    }
-    .barra ul{
-        font-size: 24px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        padding-top: 12px;
-    }
-    .barra li{
-        font-size: 20px;
-    } */
+/* ---IFRAME */
+iframe{
+    width: 600px;
+    height: 300px;
+}
+/* ---INTERES */
+.ar1{
+    order: 0;
+}
+.al1{
+    order: -1;
+}
+.ar2{
+    order: 2;
+}
+.al2{
+    order: 1;    
+}
+.ar3{
+    order: 4;
+}
+.al3{
+    order: 3;    
+}
     /* --------------------------INFORMACION-------------------------- */
     .infocont {
         font-size: 21px;
@@ -745,8 +785,33 @@ h2{
     }
 }
 
-@media only screen and (min-width:1075px) {
-
+@media only screen and (min-width:1200px) {
+    /* XL */
+    
+/* ---IFRAME */
+iframe{
+    width: 700px;
+    height: 350px;
+}
+/* ---INTERES */
+.ar1{
+    order: 0;
+}
+.al1{
+    order: -1;
+}
+.ar2{
+    order: 2;
+}
+.al2{
+    order: 1;    
+}
+.ar3{
+    order: 4;
+}
+.al3{
+    order: 3;    
+}
     /* --------------------------INFORMACION-------------------------- */
     .infocont {
         font-size: 25px;
