@@ -12,6 +12,9 @@ body {
     font-family: 'Bebas Neue', cursive;
     background-color: #4158D0;
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-color: #36458b;
+background-image: linear-gradient(43deg, #36458b 0%, #89187e 46%, #ea9600 100%);
+
 
 }
 h2{
@@ -19,6 +22,10 @@ h2{
     text-align: center;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight:600;
+    text-shadow: 1px 1px 1px rgb(14, 14, 14);
+}
+p{
+    margin-bottom: 0;
 }
 
 .navbar-brand {
@@ -76,21 +83,23 @@ h2{
     border-radius: 0;
     height: 60vh;
     margin: 0;
+    box-shadow: 1px 1px 2px black;
 }
 
 .jumbotron h1 {
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 1px 1px 2px black;
     font-size: 3rem;
-    color: rgb(224, 184, 2);
+    color: rgb(238, 194, 0);
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 600;
 }
 
 .jumbotron p {
     font-size: 1.5rem;
-    color: black;
+    color: rgb(12, 12, 12);
     font-family: 'Barlow Condensed', sans-serif;
     font-weight:600;
+    text-shadow: 1px 1px 2px rgb(36, 36, 36);
 }
 
 .btnjum {
@@ -125,21 +134,31 @@ h2{
 iframe{
     box-shadow: 3px 3px 4px black;
 }
-/* --------------------------section-------------------- */
+/* --------------------------section interes-------------------- */
 .interes {
     width: 100% auto;
     background-color: rgb(17, 17, 17);
     color: aliceblue;
     margin: 20px 0 20px 0;
-    padding-top: 10px ;
+    padding: 0;
+    
 }
-.row aside{
-    padding: 10px 0 10px 0;
+.row {
+    padding: 10px 0 10px 0; 
+    align-items: center;
 }
 
 .desc h2 {
     text-align: center;
+    font-weight: 600;
     padding: 20px;
+    font-size: 2rem;
+}
+.desc p{
+    padding: 20px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
 }
 .descimg{
     border-radius: 2px ;
@@ -544,7 +563,8 @@ iframe{
     text-align: center;
 }
 .footer .mediacontainer{
-    text-align: center; 
+    text-align: center;
+    
 }
 
 .ig:hover {
@@ -787,7 +807,11 @@ iframe{
 
 @media only screen and (min-width:1200px) {
     /* XL */
-    
+    /*INDEX  */
+
+.row aside{
+    margin-bottom: 10px;
+}
 /* ---IFRAME */
 iframe{
     width: 700px;
@@ -882,5 +906,3 @@ iframe{
 
 }
 
-/* --------------------------INFORMACION-------------------------- */
-/* --------------------------PROXIMASFECHAS--------------------------*/
