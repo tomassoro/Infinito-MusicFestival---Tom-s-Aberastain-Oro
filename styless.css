@@ -10,10 +10,9 @@
 /*  -------------Header --------------  */
 body {
     font-family: 'Bebas Neue', cursive;
-    background-color: #4158D0;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     background-color: #36458b;
-background-image: linear-gradient(43deg, #36458b 0%, #89187e 46%, #ea9600 100%);
+    background-image: linear-gradient(43deg, #36458b 0%, #89187e 46%, #ea9600 100%);
+    background-repeat: no-repeat;
 
 
 }
@@ -22,6 +21,7 @@ h2{
     text-align: center;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight:600;
+    
     text-shadow: 1px 1px 1px rgb(14, 14, 14);
 }
 p{
@@ -130,6 +130,7 @@ p{
 /* -------IFRAME------------ */
 .iframe{
     text-align: center;
+    margin: 10px 0 20px 0; 
 }
 iframe{
     box-shadow: 3px 3px 4px black;
@@ -139,11 +140,11 @@ iframe{
     width: 100% auto;
     background-color: rgb(17, 17, 17);
     color: aliceblue;
-    margin: 20px 0 20px 0;
+    margin: 30px 0 20px 0;
     padding: 0;
     
 }
-.row {
+.int {
     padding: 10px 0 10px 0; 
     align-items: center;
 }
@@ -197,51 +198,26 @@ iframe{
 
 
 /* --------------------------Artistas2022---------------------------- */
-.artistas2022 {
-    min-height: calc(100vh - 20vh);
-    width: 100%;
-    padding-bottom: 20px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    color: aliceblue;
-}
+.sectart{
+    padding: 40px;
 
-.artistas2022 h2 {
-    padding-top: 20px;
-    font-size: 28px;
-    display: flex;
 }
-
-.artistas2022 .artistcontainer {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+.artist{
     gap: 10px;
+    justify-content: space-around;
+
+}
+.card{
+    background-color:#4159d04d;
+    padding: 20px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 1.5rem;
+}
+.card img{
+    box-shadow: 2px 2px 4px black;
 }
 
-.artist {
-    width: 20%;
-    height: 30%;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-}
-
-.artist .imgart {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    box-shadow: 2px 2px 5px black;
-    background-image: url(https://images.unsplash.com/photo-1560800452-f2d475982b96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
-    background-position: center;
-    background-size: cover;
-}
 
 /* ------------------Informacion---------------- */
 .informacion {
