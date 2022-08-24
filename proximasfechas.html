@@ -1,64 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styless.css">
     <link rel="icon" href="Imagenes\loop.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Infinito Music Festival ©</title>
 </head>
+</head>
+
 <body>
-    <header class="header">
-        <div class="logo"><a href="index.html"><h1>Infinito</h1></a></div>
-        <nav class="barra">
-            <ul>
-                <li><a href="artistas2022.html">Artistas 2022</a></li>
-                <li><a href="imagenes.html">Imagenes</a></li>
-                <li><a href="informacion.html">Informacion</a></li>
-                <li><a href="proximasfechas.html">Proximas fechas</a></li>  
+    <nav class="navbar navbar-expand-md bgnav">
+        <!--Brand-->
+        <a class="navbar-brand" href="index.html"> INFINITO </a>
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <i class="menubar fa-solid fa-bars"></i>
+            <!-- <span class="navbar toggler icon"></span> -->
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="artistas2022.html"> Artistas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="imagenes.html"> Imagenes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="informacion.html"> Informacion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="proximasfechas.html"> Proximas fechas</a>
+                </li>
             </ul>
-        </nav>
-    </header> 
-    <main class="containerfechas">
-        <h2>Próximas Fechas</h2>
-        <section class="placecont">
-            <div class="place">
+        </div>
+    </nav>
+    <!-- Fin del nav -->
+    <main class="container-fluid fechas">
+        <h1>Proximas fechas</h1>
+        <div class="row contfechas">
+            <section class="place">
                 <h2>Honu Beach</h2>
-                <div class="infoplace">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, dolore!</p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3140.224297180703!2d-57.5430712!3d-38.0884426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584e7374b00f5e1%3A0xd96dbd4995527320!2sHonu%20Beach!5e0!3m2!1ses!2sar!4v1658133605060!5m2!1ses!2sar" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
-                    <div class="imghonu"></div>
-                </div>
-            </div>
-            <div class="place">
-                <h2>Sala Apolo</h2>
-                <div class="imgapolo"> </div>
-                <div class="infoplace">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, quod!</p>
-                    
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2993.9844631321557!2d2.1674187154253812!3d41.37442227926534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a25c75a2cf3b%3A0xfe58977ad221b3a6!2sSala%20Apolo!5e0!3m2!1ses!2sar!4v1658134029840!5m2!1ses!2sar" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
-                </div>
-            </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, voluptate nulla. Fuga voluptates asperiores vel quo pariatur totam accusamus a!</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3140.224297180703!2d-57.5430712!3d-38.0884426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584e7374b00f5e1%3A0xd96dbd4995527320!2sHonu%20Beach!5e0!3m2!1ses!2sar!4v1658133605060!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+
+            </section>
+            <section class="place">
+                <h2>Honu Beach</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, voluptate nulla. Fuga voluptates asperiores vel quo pariatur totam accusamus a!</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3140.224297180703!2d-57.5430712!3d-38.0884426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584e7374b00f5e1%3A0xd96dbd4995527320!2sHonu%20Beach!5e0!3m2!1ses!2sar!4v1658133605060!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+            </section>
+            <section class="place">
+                <h2>Honu Beach</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, voluptate nulla. Fuga voluptates asperiores vel quo pariatur totam accusamus a!</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3140.224297180703!2d-57.5430712!3d-38.0884426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584e7374b00f5e1%3A0xd96dbd4995527320!2sHonu%20Beach!5e0!3m2!1ses!2sar!4v1658133605060!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+            </section>
             
-            <div class="place">
-                <h2>Geba Tent</h2>
-                <div class="imggeba"></div>
-                <div class="infoplace">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, quod!.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, quod!.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, quod!.</p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2697.875067892742!2d8.587010499999998!3d47.45337469999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479a9f45ac62bb33%3A0x87d147f18839d16f!2sGEBA-EVENT.CH!5e0!3m2!1ses!2sar!4v1658134158418!5m2!1ses!2sar" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
-                </div>
-            </div>
-    </section>
-    <footer class="footer">
+        </div>
+        
+
+<!-- Footer -->
+    <footer class="container-fluid footer">
         <p>Derechos reservados por copyright</p>
         <div class="mediacontainer">
             <a class="fb" href="https://www.facebook.com/BRESHING/" target="_blank">
                 <i class="fa-brands fa-facebook"></i>
             </a>
-            <a class="ig" href="https://www.instagram.com/bresh/?hl=es" target="_blank">    
-                <i class="fa-brands fa-instagram"></i>
+            <a class="ig" href="https://www.instagram.com/bresh/?hl=es" target="_blank">
+                <i class="fa-brands fa-instagram ig"></i>
             </a>
             <a class="yt" href="https://www.youtube.com/c/BRESHOficial/featured" target="_blank">
                 <i class="fa-brands fa-youtube"></i>
@@ -66,7 +84,17 @@
             <a class="sp" href="https://open.spotify.com/user/5eslbujfhcf536kkewdkbv4fr" target="_blank">
                 <i class="fa-brands fa-spotify"></i>
             </a>
-        </div>
-    </footer>
+        </footer>
+        <!-- Fin footer -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>

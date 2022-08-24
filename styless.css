@@ -470,58 +470,29 @@ iframe{
 
 /* -----Proximas Fechas---------------- */
 
-.containerfechas {
-    width: 100%;
-    min-height: calc(100vh - 20vh);
-    display: flex;
-    flex-direction: column;
+.fechas {
     background-image: url("https://cdn.pixabay.com/photo/2016/09/10/11/11/musician-1658887_960_720.jpg");
     background-size: cover;
+    background-position: center;
 }
-
-.containerfechas h2 {
-    width: 100%;
-    height: 80px;
-    padding: 20px 0 10px 10px;
-    font-size: 40px;
-    display: block;
-    text-align: left;
+.fechas h1{
+    padding: 20px 0 0 20px ;
     color: aliceblue;
 }
-
-.placecont {
-    width: 100%;
-    padding: 0 10px 10px;
-    gap: 5px;
-    display: flex;
-    flex-direction: column;
-}
-
-.place {
-    height: 33%;
-    width: 100%;
-    background-color: rgba(10, 10, 10, 0.918);
-    padding: 0 10px;
-    display: flex;
-    flex-flow: column wrap;
-}
-
-.place h2 {
-    color: orange;
-    font-size: 38px;
-}
-
-.infoplace {
-    display: flex;
-    width: 100%;
-    padding-top: 10px;
-    flex-flow: column wrap;
-}
-
-.infoplace p {
-    font-size: 18px;
+.contfechas{
+    
+    background-color: rgba(0, 0, 0, 0.808);
+    font-family: 'Barlow Condensed', sans-serif;
     color: aliceblue;
 }
+.place{
+    padding: 20px;
+}
+iframe{
+    box-shadow: 2px 2px 4px black;
+}
+
+
 
 
 
