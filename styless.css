@@ -722,7 +722,7 @@ iframe{
     font-family: 'Bebas Neue', cursive;
     background-color: rgba(19, 18, 18, 0.801);
     color: aliceblue;
-    height: 20vh;
+    height: auto;
     padding: 20px 0 10px 0;
 }
 
@@ -804,25 +804,6 @@ iframe{
 .al3{
     order: 3;    
 }
-    /* .header{
-        font-size: 22px;
-    }
-    .header .logo{
-        padding: 5px 0 0 10px;
-    }
-    .header .barra{
-        justify-items: flex-end;
-        display: flex;
-        align-items: center;    
-        
-    }
-    .barra ul{
-        font-size: 20px;
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        padding-top: 10px;
-    } */
     /* --------------------------INFORMACION-------------------------- */
     .infocont {
         font-size: 20px;
