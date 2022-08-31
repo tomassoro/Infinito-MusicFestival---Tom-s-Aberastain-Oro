@@ -31,7 +31,6 @@ p {
   font-size: 3rem;
   font-weight: bolder;
 }
-
 .navbar-brand:hover {
   -webkit-animation: colorbrand 1200ms infinite ease-out;
           animation: colorbrand 1200ms infinite ease-out;
@@ -71,19 +70,17 @@ p {
 .menubar {
   color: aliceblue;
 }
+.menubar :active {
+  color: #3605a8;
+}
 
 .nav-item a {
   color: aliceblue;
   font-size: 1.5rem;
 }
-
 .nav-item a:hover {
   color: rgb(224, 184, 2);
   transition: all 800ms;
-}
-
-.menubar:active {
-  color: #3605a8;
 }
 
 /* --------------------------INDEX------------------------- */
@@ -234,14 +231,13 @@ iframe {
   box-shadow: 1px 1px 2px black;
   padding: 0;
 }
-
 .jumboart h2 {
+  padding-top: 50px;
   text-align: center;
   font-size: 4rem;
   color: aliceblue;
   text-shadow: 1px 1px 6px black;
 }
-
 .jumboart p {
   color: aliceblue;
   font-size: 2rem;
@@ -257,15 +253,11 @@ iframe {
   font-size: 3rem;
 }
 
-.profile-area {
-  padding: 80px 20px;
-}
-
-.row {
+.artistas {
   justify-content: center;
+  margin-bottom: 40px;
 }
-
-.artist {
+.artistas .artist {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -275,183 +267,97 @@ iframe {
   padding: 0;
   margin: 10px;
 }
-
-.artist .artname {
+.artistas .artist .artname {
   padding-top: 80px;
   text-shadow: 1px 1px 3px black;
   color: aliceblue;
 }
-
-.artist:hover {
+.artistas .artist:hover {
   box-shadow: 0 0 30px rgba(241, 240, 255, 0.267);
   transition: all 800ms;
 }
-
-.artist:hover .img2 {
+.artistas .artist:hover .img2 {
   border-color: aliceblue;
   box-shadow: 0 0 30px rgba(241, 240, 255, 0.267);
   transition: all 800ms;
 }
 
-.pic1 {
-  background-image: url("https://images.unsplash.com/photo-1496450080853-5f78c43af9e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
-  background-size: cover;
+.imgfondoartist, .pic11, .pic9, .pic7, .pic5, .pic3, .pic1 {
   background-position: center;
+  background-size: cover;
   height: 20vh;
   width: 100%;
   border-top-left-radius: 15px;
   border-top-left-radius: 15px;
   border-bottom: 2px solid black;
   box-shadow: 0 0 3px black;
+}
+
+.imgcircartist, .pic12, .pic10, .pic8, .pic6, .pic4, .pic2 {
+  position: absolute;
+  top: 7%;
+  left: calc((100% - 140px) / 2);
+  border: 6px solid rgba(7, 7, 7, 0.534);
+  border-radius: 50%;
+  box-shadow: 0 0 3px black;
+  width: 140px;
+  height: 140px;
+  margin-bottom: 20px;
+  background-size: cover;
+}
+
+.pic1 {
+  background-image: url("https://images.unsplash.com/photo-1496450080853-5f78c43af9e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
 }
 
 .pic2 {
   background-image: url("https://images.unsplash.com/photo-1633259751487-d550cd6b13a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1535&q=80");
   background-position: 50% 10%;
-  background-size: cover;
-  position: absolute;
-  top: 7%;
-  left: calc((100% - 140px) / 2);
-  border: 6px solid rgba(7, 7, 7, 0.534);
-  border-radius: 50%;
-  box-shadow: 0 0 3px black;
-  width: 140px;
-  height: 140px;
-  margin-bottom: 20px;
 }
 
 .pic3 {
   background-image: url("https://images.unsplash.com/photo-1517167685284-96a27681ad75?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80");
-  background-position: center;
-  background-size: cover;
-  height: 20vh;
-  width: 100%;
-  border-top-left-radius: 15px;
-  border-top-left-radius: 15px;
-  border-bottom: 2px solid black;
-  box-shadow: 0 0 3px black;
 }
 
 .pic4 {
   background-image: url("https://images.unsplash.com/photo-1517230878791-4d28214057c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80");
   background-position: 60% 10%;
-  background-size: cover;
-  position: absolute;
-  top: 7%;
-  left: calc((100% - 140px) / 2);
-  border: 6px solid rgba(7, 7, 7, 0.534);
-  border-radius: 50%;
-  box-shadow: 0 0 3px black;
-  width: 140px;
-  height: 140px;
-  margin-bottom: 20px;
 }
 
 .pic5 {
   background-image: url("https://images.unsplash.com/photo-1592492152545-9695d3f473f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
-  background-size: cover;
-  height: 20vh;
-  width: 100%;
-  border-top-left-radius: 15px;
-  border-top-left-radius: 15px;
-  border-bottom: 2px solid black;
-  box-shadow: 0 0 3px black;
 }
 
 .pic6 {
   background-image: url("https://images.unsplash.com/photo-1527735095040-147bffb4cede?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1530&q=80");
   background-position: 50% 10%;
-  background-size: cover;
-  position: absolute;
-  top: 7%;
-  left: calc((100% - 140px) / 2);
-  border: 6px solid rgba(7, 7, 7, 0.534);
-  border-radius: 50%;
-  box-shadow: 0 0 3px black;
-  width: 140px;
-  height: 140px;
-  margin-bottom: 20px;
 }
 
 .pic7 {
   background-image: url("https://images.unsplash.com/photo-1592492159418-39f319320569?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
-  background-position: center;
-  background-size: cover;
-  height: 20vh;
-  width: 100%;
-  border-top-left-radius: 15px;
-  border-top-left-radius: 15px;
-  border-bottom: 2px solid black;
-  box-shadow: 0 0 3px black;
 }
 
 .pic8 {
   background-image: url("https://images.unsplash.com/photo-1612976023590-be5b6a14051d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
   background-position: 50% 10%;
-  background-size: cover;
-  position: absolute;
-  top: 7%;
-  left: calc((100% - 140px) / 2);
-  border: 6px solid rgba(7, 7, 7, 0.534);
-  border-radius: 50%;
-  box-shadow: 0 0 3px black;
-  width: 140px;
-  height: 140px;
-  margin-bottom: 20px;
 }
 
 .pic9 {
   background-image: url("https://images.unsplash.com/photo-1542789828-6c82d889ed74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80");
-  background-position: center;
-  background-size: cover;
-  height: 20vh;
-  width: 100%;
-  border-top-left-radius: 15px;
-  border-top-left-radius: 15px;
-  border-bottom: 2px solid black;
-  box-shadow: 0 0 3px black;
 }
 
 .pic10 {
   background-image: url("https://images.unsplash.com/photo-1599467556385-48b57868f038?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80   ");
   background-position: 50% 10%;
-  background-size: cover;
-  position: absolute;
-  top: 7%;
-  left: calc((100% - 140px) / 2);
-  border: 6px solid rgba(7, 7, 7, 0.534);
-  border-radius: 50%;
-  box-shadow: 0 0 3px black;
-  width: 140px;
-  height: 140px;
-  margin-bottom: 20px;
 }
 
 .pic11 {
   background-image: url("https://images.unsplash.com/photo-1593672715438-d88a70629abe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80");
-  background-position: center;
-  background-size: cover;
-  height: 20vh;
-  width: 100%;
-  border-top-left-radius: 15px;
-  border-top-left-radius: 15px;
-  border-bottom: 2px solid black;
-  box-shadow: 0 0 3px black;
 }
 
 .pic12 {
   background-image: url("https://images.unsplash.com/photo-1600180073523-fa4a48f9b8b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1530&q=80");
   background-position: 50% 10%;
-  background-size: cover;
-  position: absolute;
-  top: 7%;
-  left: calc((100% - 140px) / 2);
-  border: 6px solid rgba(7, 7, 7, 0.534);
-  border-radius: 50%;
-  box-shadow: 0 0 3px black;
-  width: 140px;
-  height: 140px;
-  margin-bottom: 20px;
 }
 
 .btmedia {
@@ -459,8 +365,7 @@ iframe {
   font-family: "Barlow Condensed", sans-serif;
   color: aliceblue;
 }
-
-.buttommedia {
+.btmedia .buttommedia {
   width: 90px;
   color: aliceblue;
   text-shadow: 1px 1px 2px black;
@@ -471,8 +376,7 @@ iframe {
   background-color: #142692;
   background-image: linear-gradient(43deg, #142692 0%, #8b1283 46%, #dcb272 100%);
 }
-
-.buttommedia:hover {
+.btmedia :hover {
   background-color: #36458b;
   background-image: linear-gradient(43deg, #36458b 0%, #89187e 46%, #ea9600 80%);
   transition: all 5s;
@@ -784,10 +688,6 @@ iframe {
   font-size: 30px;
 }
 
-/* --------------------------MediaQuerys--------------------------  */
-/* --------------------------INDEX-------------------------- */
-/* --------------------------ARTISTAS-------------------------- */
-/* --------------------------INFORMACION-------------------------- */
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   /* ---------------INDEX */
   /* ---IFRAME */

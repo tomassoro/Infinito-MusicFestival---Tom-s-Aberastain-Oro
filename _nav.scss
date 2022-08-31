@@ -1,0 +1,45 @@
+.navbar-brand {
+    color: aliceblue;
+    font-size: 3rem;
+    font-weight: bolder;
+    
+    &:hover {
+        animation: colorbrand 1200ms infinite ease-out;
+    }
+}
+
+@keyframes colorbrand {
+    0%{
+        color: aliceblue;
+    }
+    50%{
+        color: #C850C0;
+    }
+    100%{
+        color: #FFCC70;
+    }
+}
+#collapsibleNavbar{
+    justify-content: flex-end;    
+}
+.bgnav {
+    background-color: rgba(0, 0, 0, 0.699);
+}
+
+.menubar {
+    color: aliceblue;
+    :active {
+        color: #3605a8;
+    }
+}
+
+.nav-item a {
+    color: aliceblue;
+    font-size: 1.5rem;
+    
+    &:hover{
+        color: rgb(224, 184, 2) ;
+        transition: all 800ms;
+    }
+
+}
