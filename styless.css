@@ -231,14 +231,14 @@ iframe {
   box-shadow: 1px 1px 2px black;
   padding: 0;
 }
-.jumboart h2 {
+.jumboarth2 {
   padding-top: 50px;
   text-align: center;
   font-size: 4rem;
   color: aliceblue;
   text-shadow: 1px 1px 6px black;
 }
-.jumboart p {
+.jumboartp {
   color: aliceblue;
   font-size: 2rem;
   text-shadow: 1px 1px 4px black;
