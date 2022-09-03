@@ -16,14 +16,18 @@ body {
 
 
 }
-h2{
-    padding: 20px 0 20px 0;
-    text-align: center;
+.h2{
     font-family: 'Barlow Condensed', sans-serif;
     font-weight:600;
-    
-    text-shadow: 1px 1px 1px rgb(14, 14, 14);
+    text-shadow: 1px 1px 3px rgb(14, 14, 14);
+    font-size: 3rem;
 }
+.h2s{
+    @extend .h2;
+    padding: 20px 0 20px 0;
+    text-align: center;
+    color: rgb(46, 46, 46);
+}   
 p{
     margin-bottom: 0;
 }
@@ -40,57 +44,56 @@ p{
     height: 60vh;
     margin: 0;
     box-shadow: 1px 1px 2px black;
-}
 
-.jumbotron h1 {
-    text-shadow: 1px 1px 2px black;
-    font-size: 3rem;
-    color: rgb(238, 194, 0);
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 600;
-}
-
-.jumbotron p {
-    font-size: 1.5rem;
-    color: rgb(12, 12, 12);
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight:600;
-    text-shadow: 1px 1px 2px rgb(36, 36, 36);
+    h1 {
+        text-shadow: 1px 1px 2px black;
+        font-size: 3rem;
+        color: rgb(238, 194, 0);
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 600;
+    }
+    p {
+        font-size: 1.5rem;
+        color: rgb(12, 12, 12);
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight:600;
+        text-shadow: 1px 1px 2px rgb(36, 36, 36);
+    }
+    
 }
 
 .btnjum {
     background-color: rgba(10, 10, 10, 0.87);
     box-shadow: 1px 1px 3px black;
-}
-
-.btnjum a {
-    color: aliceblue;
-    text-decoration: none;
-}
-
-.btnjum:hover {
-    background-color: orange;
-    transition: all 800ms;
+    
+    a {
+        color: aliceblue;
+        text-decoration: none;
+    }
+    &:hover {
+        background-color: orange;
+        transition: all 800ms;
+    }
 }
 /* -----sponsors------- */
 .carousel-inner{
     margin-bottom: 40px;
+    .carousel-item{
+        text-align: center;
+        img{
+            width:90px;
+        }
+    }
 }
-.carousel-item{
-    text-align: center;
 
-}
-.carousel-item img{
-    width:90px;
-}
 /* -------IFRAME------------ */
 .iframe{
     text-align: center;
     margin: 10px 0 20px 0; 
-}
-iframe{
-    box-shadow: 3px 3px 4px black;
-}
+    iframe{
+        box-shadow: 3px 3px 4px black;
+    }
+}   
 /* --------------------------section interes-------------------- */
 .interes {
     width: 100% auto;
@@ -164,8 +167,9 @@ iframe{
     border-bottom: 1px solid black;
     box-shadow: 1px 1px 2px black ;
     padding: 0;
+    font-family: 'Barlow Condensed', sans-serif;
     
-    h2{
+    h1{ 
         padding-top: 50px;
         text-align: center;
         font-size: 4rem;
@@ -239,7 +243,22 @@ iframe{
     margin-bottom: 20px;
     background-size: cover;
 }
-
+@each $artistfoto in pic2, pic4, pic6, pic8, pic10, pic12{
+    .#{$artistfoto}-icon{
+        background-image: url("Imagenes/artistas2022/#{$artistfoto}.jpg");
+        position: absolute;
+        top: 7%;
+        left: calc((100% - 140px)/2);
+        border: 6px solid rgba(7, 7, 7, 0.534);
+        border-radius: 50%;
+        box-shadow: 0 0 3px black;
+        width: 140px;
+        height: 140px;
+        margin-bottom: 20px;
+        background-size: cover;
+    }
+    
+}
 .pic1{
     background-image: url("https://images.unsplash.com/photo-1496450080853-5f78c43af9e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
     @extend .imgfondoartist
@@ -298,8 +317,6 @@ iframe{
 .btmedia{
     font-size: 1.5rem;
     font-family: 'Barlow Condensed', sans-serif;
-    color: aliceblue;
-    
     .buttommedia{
         width: 90px;
         color: aliceblue;
@@ -314,11 +331,11 @@ iframe{
     :hover{
         background-color: #36458b;
         background-image: linear-gradient(43deg, #36458b 0%, #89187e 46%, #ea9600 80%);
-        transition: all 5s;
+        transition: all ease-in-out;
     
     }
 }
-.mediaartist{
+.mediaartist a{
     font-size: 1.7rem;
     padding-top: 10pxs;
     color: aliceblue;
@@ -491,89 +508,6 @@ iframe{
     background-size: cover;
     background-position: 30% 55%;
 }
-
-/* } PARTE DE LA GALERIA CUANDO AGRUEGUE OTRAS IMAGENES
-.item21{
-    background-image: url(imagenes/imagenes/nicholas-green-nPz8akkUmDI-unsplash.jpg);
-    background-size: cover;
-}
-
-.item22{
-    background-image: url(Imagenes/imagenes/nathan-fertig-IW5Bm4rB9OA-unsplash.jpg);
-    background-size: cover;
-}
-.item23{
-    background-image: url(imagenes/imagenes/muneeb-syed-4_M8uIfPEZw-unsplash.jpg);
-    background-size: cover;
-    background-position: 35% 65%;
-}
-.item24{
-    background-image: url(imagenes/imagenes/jakob-owens-YSFk5awhcec-unsplash.jpg);
-    background-size: cover;
-}
-.item25{
-    background-image: url(imagenes/imagenes/danny-howe-bn-D2bCvpik-unsplash.jpg);
-    background-size: cover;
-}
-.item26{
-    background-image: url(imagenes/imagenes/colin-lloyd-W6_txbgkkeU-unsplash.jpg);
-    background-size: cover;
-    background-position: 45% 55%;
-}
-.item27{
-    background-image: url(imagenes/imagenes/colin-lloyd-5TGwSC4dHOU-unsplash.jpg);
-    background-size: cover;
-}
-.item28{
-    background-image: url(imagenes/imagenes/samuel-regan-asante-3BcNKoySAq0-unsplash.jpg);
-    background-size: cover;
-    background-position: 30% 55%;
-}
-
-
-.item31{
-    background-image: url(imagenes/imagenes/nicholas-green-nPz8akkUmDI-unsplash.jpg);
-    background-size: cover;
-}
-
-.item32{
-    background-image: url(Imagenes/imagenes/nathan-fertig-IW5Bm4rB9OA-unsplash.jpg);
-    background-size: cover;
-}
-.item33{
-    background-image: url(imagenes/imagenes/muneeb-syed-4_M8uIfPEZw-unsplash.jpg);
-    background-size: cover;
-    background-position: 35% 65%;
-}
-.item34{
-    background-image: url(imagenes/imagenes/jakob-owens-YSFk5awhcec-unsplash.jpg);
-    background-size: cover;
-}
-.item35{
-    background-image: url(imagenes/imagenes/danny-howe-bn-D2bCvpik-unsplash.jpg);
-    background-size: cover;
-}
-.item36{
-    background-image: url(imagenes/imagenes/colin-lloyd-W6_txbgkkeU-unsplash.jpg);
-    background-size: cover;
-    background-position: 45% 55%;
-}
-.item37{
-    background-image: url(imagenes/imagenes/colin-lloyd-5TGwSC4dHOU-unsplash.jpg);
-    background-size: cover;
-}
-.item38{
-    background-image: url(imagenes/imagenes/samuel-regan-asante-3BcNKoySAq0-unsplash.jpg);
-    background-size: cover;
-    background-position: 30% 55%;
-} */
-
-
-
-
-
-
-
 /* -----Proximas Fechas---------------- */
 
 .fechas {
