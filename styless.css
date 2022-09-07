@@ -221,6 +221,30 @@ iframe {
 }
 
 /* --------------------------Artistas2022---------------------------- */
+.imgfondoartist, .pic11, .pic9, .pic7, .pic5, .pic3, .pic1 {
+  background-position: center;
+  background-size: cover;
+  height: 20vh;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom: 2px solid black;
+  box-shadow: 0 0 3px black;
+}
+
+.imgcircartist, .pic12, .pic10, .pic8, .pic6, .pic4, .pic2 {
+  position: absolute;
+  top: 7%;
+  left: calc((100% - 140px) / 2);
+  border: 6px solid rgba(7, 7, 7, 0.534);
+  border-radius: 50%;
+  box-shadow: 0 0 3px black;
+  width: 140px;
+  height: 140px;
+  margin-bottom: 20px;
+  background-size: cover;
+}
+
 .jumboart {
   height: 60vh;
   background-image: url("https://images.unsplash.com/photo-1572467551143-a57f5de1f861?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1373&q=80");
@@ -282,30 +306,6 @@ iframe {
   transition: all 800ms;
 }
 
-.imgfondoartist, .pic11, .pic9, .pic7, .pic5, .pic3, .pic1 {
-  background-position: center;
-  background-size: cover;
-  height: 20vh;
-  width: 100%;
-  border-top-left-radius: 15px;
-  border-top-left-radius: 15px;
-  border-bottom: 2px solid black;
-  box-shadow: 0 0 3px black;
-}
-
-.imgcircartist, .pic12, .pic10, .pic8, .pic6, .pic4, .pic2 {
-  position: absolute;
-  top: 7%;
-  left: calc((100% - 140px) / 2);
-  border: 6px solid rgba(7, 7, 7, 0.534);
-  border-radius: 50%;
-  box-shadow: 0 0 3px black;
-  width: 140px;
-  height: 140px;
-  margin-bottom: 20px;
-  background-size: cover;
-}
-
 .pic1 {
   background-image: url("https://images.unsplash.com/photo-1496450080853-5f78c43af9e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
 }
@@ -313,6 +313,12 @@ iframe {
 .pic2 {
   background-image: url("imagenes/artistas2022/pixel-town-RRp0DaYAnsM-unsplash.jpg");
   background-position: 50% 10%;
+}
+
+.artist:hover .img2 {
+  background-image: rgb(17, 138, 245);
+  background-position: 0 0 30px rgba(22, 6, 255, 0.267);
+  background-size: all 800ms;
 }
 
 .pic3 {
