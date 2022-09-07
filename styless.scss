@@ -244,35 +244,10 @@ p{
     }
     
 }
-<<<<<<< HEAD
-.imgfondoartist{
-    background-position: center;
-    background-size: cover;
-    height: 20vh;
-    width: 100%;      
-    border-top-left-radius: 15px;
-    border-top-left-radius: 15px;
-    border-bottom: 2px solid black;
-    box-shadow: 0 0 3px black;
-}
-.imgcircartist{
-    position: absolute;
-    top: 7%;
-    left: calc((100% - 140px)/2);
-    border: 6px solid rgba(7, 7, 7, 0.534);
-    border-radius: 50%;
-    box-shadow: 0 0 3px black;
-    width: 140px;
-    height: 140px;
-    margin-bottom: 20px;
-    background-size: cover;
-=======
-
 @mixin imgcirc ($img , $position , $size){
     background-image: $img;
     background-position: $position;
     background-size: $size;
->>>>>>> artistas
 }
 .pic1{
     background-image: url("https://images.unsplash.com/photo-1496450080853-5f78c43af9e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
