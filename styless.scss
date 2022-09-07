@@ -158,6 +158,28 @@ p{
 
 
 /* --------------------------Artistas2022---------------------------- */
+.imgfondoartist{
+    background-position: center;
+    background-size: cover;
+    height: 20vh;
+    width: 100%;      
+    border-top-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom: 2px solid black;
+    box-shadow: 0 0 3px black;
+}
+.imgcircartist{
+    position: absolute;
+    top: 7%;
+    left: calc((100% - 140px)/2);
+    border: 6px solid rgba(7, 7, 7, 0.534);
+    border-radius: 50%;
+    box-shadow: 0 0 3px black;
+    width: 140px;
+    height: 140px;
+    margin-bottom: 20px;
+    background-size: cover;
+}
 .jumboart{
     height: 60vh;
     background-image: url("https://images.unsplash.com/photo-1572467551143-a57f5de1f861?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1373&q=80");
@@ -182,7 +204,8 @@ p{
         text-shadow:  1px 1px 4px black;
         text-align: center;
     }
-}   
+} 
+
 .h2art{
     margin-top: 40px;
     text-align: center  ;
@@ -221,6 +244,7 @@ p{
     }
     
 }
+<<<<<<< HEAD
 .imgfondoartist{
     background-position: center;
     background-size: cover;
@@ -242,61 +266,66 @@ p{
     height: 140px;
     margin-bottom: 20px;
     background-size: cover;
+=======
+
+@mixin imgcirc ($img , $position , $size){
+    background-image: $img;
+    background-position: $position;
+    background-size: $size;
+>>>>>>> artistas
 }
 .pic1{
     background-image: url("https://images.unsplash.com/photo-1496450080853-5f78c43af9e9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
     @extend .imgfondoartist
-    
 }
 .pic2{
-    background-image: url("https://images.unsplash.com/photo-1633259751487-d550cd6b13a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1535&q=80");
-    background-position: 50% 10%;
-    @extend .imgcircartist
+    @extend .imgcircartist;
+    @include imgcirc( url("imagenes/artistas2022/pixel-town-RRp0DaYAnsM-unsplash.jpg"), 50% 10% , cover )
 }
+.artist:hover .img2 {
+    @include shadowbox(rgb(17, 138, 245), 0 0 30px rgba(22, 6, 255, 0.267), all 800ms )
+}
+
 .pic3{
     background-image: url("https://images.unsplash.com/photo-1517167685284-96a27681ad75?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80");
-    @extend .imgfondoartist
+    @extend .imgfondoartist;
+    
 }
 .pic4{
-    background-image: url("https://images.unsplash.com/photo-1517230878791-4d28214057c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80");
-    background-position: 60% 10%;
-    @extend .imgcircartist
+    @include imgcirc( url("imagenes/artistas2022/pixel-town-RRp0DaYAnsM-unsplash.jpg"), 60% 10% , cover );
+    @extend .imgcircartist;
 }
 .pic5{
     background-image: url("https://images.unsplash.com/photo-1592492152545-9695d3f473f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
-    @extend .imgfondoartist
+    @extend .imgfondoartist;
 }
 .pic6{
-    background-image: url("https://images.unsplash.com/photo-1527735095040-147bffb4cede?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1530&q=80");
-    background-position: 50% 10%;
-    @extend .imgcircartist
+    @include imgcirc( url("imagenes/artistas2022/pixel-town-RRp0DaYAnsM-unsplash.jpg"), 50% 10% , cover );
+    @extend .imgcircartist;
 }
 .pic7{
     background-image: url("https://images.unsplash.com/photo-1592492159418-39f319320569?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
-    @extend .imgfondoartist
+    @extend .imgfondoartist;
 }
 .pic8{
-    background-image: url("https://images.unsplash.com/photo-1612976023590-be5b6a14051d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
-    background-position: 50% 10%;
-    @extend .imgcircartist
+    @include imgcirc( url("imagenes/artistas2022/pixel-town-RRp0DaYAnsM-unsplash.jpg"), 50% 10% , cover );
+    @extend .imgcircartist;
 }
 .pic9{
     background-image: url("https://images.unsplash.com/photo-1542789828-6c82d889ed74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80");
-    @extend .imgfondoartist
+    @extend .imgfondoartist;
 }
 .pic10{
-    background-image: url("https://images.unsplash.com/photo-1599467556385-48b57868f038?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80   ");
-    background-position: 50% 10%;
-    @extend .imgcircartist
+    @include imgcirc( url("imagenes/artistas2022/pixel-town-RRp0DaYAnsM-unsplash.jpg"), 50% 10% , cover );
+    @extend .imgcircartist;
 }
 .pic11{
     background-image: url("https://images.unsplash.com/photo-1593672715438-d88a70629abe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80");
-    @extend .imgfondoartist
+    @extend .imgfondoartist;
 }
 .pic12{
-    background-image: url("https://images.unsplash.com/photo-1600180073523-fa4a48f9b8b3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1530&q=80");
-    background-position: 50% 10%;
-    @extend .imgcircartist
+    @include imgcirc( url("imagenes/artistas2022/pixel-town-RRp0DaYAnsM-unsplash.jpg"), 50% 10% , cover );
+    @extend .imgcircartist;
 }
 .btmedia{
     font-size: 1.5rem;
