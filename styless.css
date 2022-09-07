@@ -312,12 +312,7 @@ p {
 .pic2 {
   background-image: url("imagenes/artistas2022/pixel-town-RRp0DaYAnsM-unsplash.jpg");
   background-position: 50% 10%;
-}
-
-.artist:hover .img2 {
-  background-image: rgb(17, 138, 245);
-  background-position: 0 0 30px rgba(22, 6, 255, 0.267);
-  background-size: all 800ms;
+  background-size: cover;
 }
 
 .pic3 {
@@ -325,8 +320,9 @@ p {
 }
 
 .pic4 {
-  background-image: url("imagenes/artistas2022/rsz_elizeu-dias-az3qiq1etrk-unsplash.jpg");
+  background-image: url("imagenes/artistas2022/pixel-town-RRp0DaYAnsM-unsplash.jpg");
   background-position: 60% 10%;
+  background-size: cover;
 }
 
 .pic5 {
@@ -334,8 +330,9 @@ p {
 }
 
 .pic6 {
-  background-image: url("imagenes/artistas2022/obafemi-moyosade-zndslHAXhAw-unsplash.jpg");
+  background-image: url("imagenes/artistas2022/pixel-town-RRp0DaYAnsM-unsplash.jpg");
   background-position: 50% 10%;
+  background-size: cover;
 }
 
 .pic7 {
@@ -343,8 +340,9 @@ p {
 }
 
 .pic8 {
-  background-image: url("imagenes/artistas2022/kevin-britos-PHYgBreyeYc-unsplash.jpg");
+  background-image: url("imagenes/artistas2022/pixel-town-RRp0DaYAnsM-unsplash.jpg");
   background-position: 50% 10%;
+  background-size: cover;
 }
 
 .pic9 {
@@ -352,8 +350,9 @@ p {
 }
 
 .pic10 {
-  background-image: url("imagenes/artistas2022/luke-thornton-JNl7o-Mj2cc-unsplash.jpg");
+  background-image: url("imagenes/artistas2022/pixel-town-RRp0DaYAnsM-unsplash.jpg");
   background-position: 50% 10%;
+  background-size: cover;
 }
 
 .pic11 {
@@ -361,8 +360,9 @@ p {
 }
 
 .pic12 {
-  background-image: url("imagenes/artistas2022/kyle-cleveland-3URAf1vCAlA-unsplash.jpg");
+  background-image: url("imagenes/artistas2022/pixel-town-RRp0DaYAnsM-unsplash.jpg");
   background-position: 50% 10%;
+  background-size: cover;
 }
 
 .btmedia {
