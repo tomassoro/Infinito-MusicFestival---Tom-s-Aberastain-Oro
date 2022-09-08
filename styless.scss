@@ -79,19 +79,21 @@ p{
         font-weight:600;
         text-shadow: 1px 1px 2px rgb(36, 36, 36);
     }
+    .button {
+        @include buttom(rgba(10, 10, 10, 0.87),aliceblue, orange )
+    }
     
 }
-
-.btnjum {
-    background-color: rgba(10, 10, 10, 0.87);
+@mixin buttom ($colorb , $colora , $colorh) {
+    background-color: $colorb;
     box-shadow: 1px 1px 3px black;
     
     a {
-        color: aliceblue;
+        color: $color;
         text-decoration: none;
     }
     &:hover {
-        background-color: orange;
+        background-color: $colorh;
         transition: all 800ms;
     }
 }
@@ -430,26 +432,25 @@ p{
 /* -----Proximas Fechas---------------- */
 
 .fechas {
-    width: 100% auto;
-    background-image: url("https://cdn.pixabay.com/photo/2016/09/10/11/11/musician-1658887_960_720.jpg");
-    background-size: cover;
-    background-position: center;
-}
-.fechas h1{
-    padding: 20px 0 0 20px ;
-    color: aliceblue;
-}
-.contfechas{
+    margin-bottom: 40px;
     
-    background-color: rgba(0, 0, 0, 0.808);
-    font-family: 'Barlow Condensed', sans-serif;
-    color: aliceblue;
-}
-.place{
-    padding: 20px;
-}
-iframe{
-    box-shadow: 2px 2px 4px black;
+    h1{
+        @include h2(aliceblue, center , 20px 0 )
+    }
+    .contfechas{
+        background-color: rgba(0, 0, 0, 0.808);
+        font-family: 'Barlow Condensed', sans-serif;
+        color: aliceblue;
+        section{
+            padding: 10px;
+            
+            button{
+                border-radius: 3px;
+            }
+        }
+    }
+
+
 }
 
 /*  -------------Footer --------------  */

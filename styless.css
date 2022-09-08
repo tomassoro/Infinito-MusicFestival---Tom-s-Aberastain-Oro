@@ -511,15 +511,32 @@ p {
 
 /* -----Proximas Fechas---------------- */
 .fechas {
-  width: 100% auto;
   background-image: url("https://cdn.pixabay.com/photo/2016/09/10/11/11/musician-1658887_960_720.jpg");
   background-size: cover;
   background-position: center;
 }
-
 .fechas h1 {
-  padding: 20px 0 0 20px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+  text-shadow: 1px 1px 3px rgb(14, 14, 14);
+  font-size: 3rem;
   color: aliceblue;
+  text-align: center;
+  padding: 20px 0;
+}
+.fechas .buttonfechas {
+  background-color: orange;
+  color: aliceblue;
+  background-color: rgba(10, 10, 10, 0.87);
+  box-shadow: 1px 1px 3px black;
+}
+.fechas .buttonfechas a {
+  color: aliceblue;
+  text-decoration: none;
+}
+.fechas .buttonfechas:hover {
+  background-color: orange;
+  transition: all 800ms;
 }
 
 .contfechas {
