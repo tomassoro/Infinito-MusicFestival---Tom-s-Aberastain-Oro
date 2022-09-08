@@ -162,22 +162,19 @@ p {
   padding: 10px 0 10px 0;
   align-items: center;
 }
-
-.desc h2 {
+.int .desc h2 {
   text-align: center;
   font-weight: 600;
   padding: 20px;
   font-size: 2rem;
 }
-
-.desc p {
+.int .desc p {
   padding: 20px;
   font-family: "Barlow Condensed", sans-serif;
   font-weight: 500;
   font-size: 1.2rem;
 }
-
-.descimg {
+.int .descimg {
   border-radius: 2px;
   box-shadow: 2px 2px 3px black;
 }
@@ -187,8 +184,8 @@ p {
 }
 
 .ar1 {
-  height: 40vh;
   background-image: url("https://images.unsplash.com/photo-1632312045004-494c905db7d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  height: 40vh;
   background-position: center;
   background-size: cover;
   order: 0;
@@ -199,8 +196,8 @@ p {
 }
 
 .al2 {
-  height: 40vh;
   background-image: url("https://images.unsplash.com/photo-1628336707631-68131ca720c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  height: 40vh;
   background-position: center;
   background-size: cover;
   order: 2;
@@ -211,8 +208,8 @@ p {
 }
 
 .ar3 {
-  height: 40vh;
   background-image: url("https://images.unsplash.com/photo-1520483691742-bada60a1edd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+  height: 40vh;
   background-position: center;
   background-size: cover;
   order: 4;
@@ -437,43 +434,11 @@ p {
 }
 
 /* ----------------------IMAGENES---------------------------- */
-.navgal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 25px;
-}
-
-.navgal ul {
-  margin-top: 30px;
-  background-color: rgb(33, 33, 34);
-  border-radius: 2px;
-  list-style: none;
-  box-shadow: 1px 1px 3px black;
-  display: flex;
-  gap: 20px;
-}
-
-.navgal li {
-  display: flex;
-  color: aliceblue;
-}
-
-.navgal a {
-  text-decoration: none;
-}
-
-.navgal h2 {
-  display: flex;
-  justify-content: center;
-}
-
 .imagenes {
   width: 100%;
   padding: 20px;
   display: grid;
 }
-
 .imagenes h2 {
   text-align: center;
   padding: 20px 0;
@@ -494,7 +459,6 @@ p {
   filter: grayscale(100%);
   border-radius: 3px;
 }
-
 .galeria:hover {
   filter: grayscale(0%);
   transform: scale(1.03);
@@ -502,46 +466,49 @@ p {
 }
 
 .item1 {
-  background-image: url(imagenes/imagenes/nicholas-green-nPz8akkUmDI-unsplash.jpg);
+  background-image: url("imagenes/locaciones/colin-lloyd-eiQqGBAMgIE-unsplash.jpg");
   background-size: cover;
   background-position: 45% 26%;
 }
 
 .item2 {
-  background-image: url(Imagenes/imagenes/nathan-fertig-IW5Bm4rB9OA-unsplash.jpg);
+  background-image: url("Imagenes/locaciones/danny-howe-bn-D2bCvpik-unsplash.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 .item3 {
-  background-image: url(imagenes/imagenes/muneeb-syed-4_M8uIfPEZw-unsplash.jpg);
+  background-image: url("imagenes/locaciones/jakob-owens-YSFk5awhcec-unsplash.jpg");
   background-size: cover;
   background-position: 35% 65%;
 }
 
 .item4 {
-  background-image: url(imagenes/imagenes/jakob-owens-YSFk5awhcec-unsplash.jpg);
+  background-image: url("imagenes/locaciones/muneeb-syed-4_M8uIfPEZw-unsplash.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 .item5 {
-  background-image: url(imagenes/imagenes/danny-howe-bn-D2bCvpik-unsplash.jpg);
+  background-image: url("imagenes/locaciones/nicholas-green-nPz8akkUmDI-unsplash.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 .item6 {
-  background-image: url(imagenes/imagenes/colin-lloyd-W6_txbgkkeU-unsplash.jpg);
+  background-image: url("imagenes/locaciones/sebastian-ervi-Qq2h76kYRFI-unsplash.jpg");
   background-size: cover;
   background-position: 45% 55%;
 }
 
 .item7 {
-  background-image: url(imagenes/imagenes/colin-lloyd-5TGwSC4dHOU-unsplash.jpg);
+  background-image: url("imagenes/locaciones/tajmia-loiacono-Zc4y1upPN00-unsplash.jpg");
   background-size: cover;
   background-position: 50% 45%;
 }
 
 .item8 {
-  background-image: url(imagenes/imagenes/samuel-regan-asante-3BcNKoySAq0-unsplash.jpg);
+  background-image: url("imagenes/locaciones/simon-boxus-xoD9JhFMtGM-unsplash.jpg");
   background-size: cover;
   background-position: 30% 55%;
 }
@@ -581,40 +548,33 @@ iframe {
   height: auto;
   padding: 20px 0 10px 0;
 }
-
 .footer p {
   font-size: 20px;
   text-align: center;
 }
-
 .footer .mediacontainer {
   text-align: center;
 }
-
-.ig:hover {
-  color: rgb(121, 0, 121);
-  transition: all 0.8s;
-}
-
-.fb:hover {
-  color: #4158D0;
-  transition: all 0.8s;
-}
-
-.yt:hover {
-  color: red;
-  transition: all 0.8s;
-}
-
-.sp:hover {
-  color: rgb(5, 151, 5);
-  transition: all 0.8s;
-}
-
-.mediacontainer a {
+.footer .mediacontainer a {
   text-decoration: none;
   color: aliceblue;
   font-size: 30px;
+}
+.footer .mediacontainer a.ig:hover {
+  color: rgb(121, 0, 121);
+  transition: all 0.8s;
+}
+.footer .mediacontainer a.fb:hover {
+  color: #4158D0;
+  transition: all 0.8s;
+}
+.footer .mediacontainer a.yt:hover {
+  color: red;
+  transition: all 0.8s;
+}
+.footer .mediacontainer a.sp:hover {
+  color: rgb(5, 151, 5);
+  transition: all 0.8s;
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -828,7 +788,7 @@ iframe {
   }
   .item4 {
     grid-area: item4;
-    background-position: 50% 65%;
+    background-position: 50% 75%;
   }
   .item5 {
     grid-area: item5;

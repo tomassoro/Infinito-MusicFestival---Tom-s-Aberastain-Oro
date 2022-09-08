@@ -102,58 +102,53 @@ p{
     margin: 30px 0 20px 0;
     padding: 0;
     overflow: hidden;
-    
+
+
 }
 .int {
     padding: 10px 0 10px 0; 
     align-items: center;
+    .desc h2 {
+        text-align: center;
+        font-weight: 600;
+        padding: 20px;
+        font-size: 2rem;
+    }
+    .desc p{
+        padding: 20px;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 500;
+        font-size: 1.2rem;
+    }
+    .descimg{
+        border-radius: 2px ;
+        box-shadow: 2px 2px 3px black;
+    }
 }
-
-.desc h2 {
-    text-align: center;
-    font-weight: 600;
-    padding: 20px;
-    font-size: 2rem;
-}
-.desc p{
-    padding: 20px;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 500;
-    font-size: 1.2rem;
-}
-.descimg{
-    border-radius: 2px ;
-    box-shadow: 2px 2px 3px black;
+@mixin interes ($img , $order){
+    background-image: $img;
+    height: 40vh;
+    background-position: center;
+    background-size: cover;
+    order: $order;  
 }
 .al1{
     order: -1;
 }
 .ar1 {
-    height: 40vh;
-    background-image: url("https://images.unsplash.com/photo-1632312045004-494c905db7d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
-    background-position: center;
-    background-size: cover;
-    order: 0;
+    @include interes(url("https://images.unsplash.com/photo-1632312045004-494c905db7d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"), 0 );
 }
 .ar2{
     order: 1;
 }
 .al2 {
-    height: 40vh;
-    background-image: url("https://images.unsplash.com/photo-1628336707631-68131ca720c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
-    background-position: center;
-    background-size: cover;
-    order: 2;
+    @include interes(url("https://images.unsplash.com/photo-1628336707631-68131ca720c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"), 2);
 }
 .al3{
     order: 3;
 }
 .ar3{
-    height: 40vh;
-    background-image: url("https://images.unsplash.com/photo-1520483691742-bada60a1edd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
-    background-position: center;
-    background-size: cover; 
-    order: 4;
+    @include interes( url("https://images.unsplash.com/photo-1520483691742-bada60a1edd6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"), 4 );
 }
 
 
@@ -373,52 +368,17 @@ p{
 }
 
 /* ----------------------IMAGENES---------------------------- */
-.navgal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-}
-
-.navgal ul {
-    margin-top: 30px;
-    background-color: rgb(33, 33, 34);
-    border-radius: 2px;
-    list-style: none;
-    box-shadow: 1px 1px 3px black;
-
-    display: flex;
-    gap: 20px;
-
-
-}
-
-.navgal li {
-    display: flex;
-    color: aliceblue;
-
-}
-
-.navgal a {
-    text-decoration: none;
-}
-
-.navgal h2 {
-    display: flex;
-    justify-content: center;
-}
-
 .imagenes {
     width: 100%;
     padding: 20px;
     display: grid;
-}
 
-.imagenes h2 {
-    text-align: center;
-    padding: 20px 0;
-    color: aliceblue;
-    text-shadow: 1px 1px 2px black;
+    h2 {
+        text-align: center;
+        padding: 20px 0;
+        color: aliceblue;
+        text-shadow: 1px 1px 2px black;
+    }
 }
 
 .temporada {
@@ -434,64 +394,40 @@ p{
     box-shadow: 2px 2px 5px black;
     filter: grayscale(100%);
     border-radius: 3px;
+    &:hover {
+        filter: grayscale(0%);
+        transform: scale(1.03);
+        transition: all 0.5s;
+    }
 }
-
-.galeria:hover {
-    filter: grayscale(0%);
-    transform: scale(1.03);
-    transition: all 0.5s;
+@mixin itemimg ($imagen, $position){
+    background-image: $imagen;
+    background-size: cover;
+    background-position: $position;    
 }
-
 .item1 {
-    background-image: url(imagenes/imagenes/nicholas-green-nPz8akkUmDI-unsplash.jpg);
-    background-size: cover;
-    background-position: 45% 26%;
-
+    @include itemimg( url("imagenes/locaciones/colin-lloyd-eiQqGBAMgIE-unsplash.jpg"), 45% 26%)
 }
-
 .item2 {
-    background-image: url(Imagenes/imagenes/nathan-fertig-IW5Bm4rB9OA-unsplash.jpg);
-    background-size: cover;
-
+    @include itemimg(  url("Imagenes/locaciones/danny-howe-bn-D2bCvpik-unsplash.jpg"), center)
 }
-
 .item3 {
-    background-image: url(imagenes/imagenes/muneeb-syed-4_M8uIfPEZw-unsplash.jpg);
-    background-size: cover;
-    background-position: 35% 65%;
-
+    @include itemimg(url("imagenes/locaciones/jakob-owens-YSFk5awhcec-unsplash.jpg"), 35% 65% )
 }
-
 .item4 {
-    background-image: url(imagenes/imagenes/jakob-owens-YSFk5awhcec-unsplash.jpg);
-    background-size: cover;
-
+    @include itemimg(url("imagenes/locaciones/muneeb-syed-4_M8uIfPEZw-unsplash.jpg"),center )
 }
-
 .item5 {
-    background-image: url(imagenes/imagenes/danny-howe-bn-D2bCvpik-unsplash.jpg);
-    background-size: cover;
-
+    @include itemimg( url("imagenes/locaciones/nicholas-green-nPz8akkUmDI-unsplash.jpg"), center)
 }
-
 .item6 {
-    background-image: url(imagenes/imagenes/colin-lloyd-W6_txbgkkeU-unsplash.jpg);
-    background-size: cover;
-    background-position: 45% 55%;
-
+    @include itemimg(url("imagenes/locaciones/sebastian-ervi-Qq2h76kYRFI-unsplash.jpg"), 45% 55% )
 }
-
 .item7 {
-    background-image: url(imagenes/imagenes/colin-lloyd-5TGwSC4dHOU-unsplash.jpg);
-    background-size: cover;
-    background-position: 50% 45%;
-
+    @include itemimg(url("imagenes/locaciones/tajmia-loiacono-Zc4y1upPN00-unsplash.jpg"),50% 45% )
 }
-
 .item8 {
-    background-image: url(imagenes/imagenes/samuel-regan-asante-3BcNKoySAq0-unsplash.jpg);
-    background-size: cover;
-    background-position: 30% 55%;
+    @include itemimg(url("imagenes/locaciones/simon-boxus-xoD9JhFMtGM-unsplash.jpg"), 30% 55%)
 }
 /* -----Proximas Fechas---------------- */
 
@@ -518,53 +454,46 @@ iframe{
     box-shadow: 2px 2px 4px black;
 }
 
-
-
-
-
 /*  -------------Footer --------------  */
 .footer{
     font-family: 'Bebas Neue', cursive;
     background-color: rgba(19, 18, 18, 0.801);
     color: aliceblue;
     height: auto;
-    padding: 20px 0 10px 0;
+    padding: 20px 0 10px 0; 
+    p {
+        font-size: 20px;
+        text-align: center;
+    }
+    .mediacontainer{
+        text-align: center;
+        
+        a {
+            text-decoration: none;
+            color: aliceblue;
+            font-size: 30px;
+            
+            &.ig:hover {
+                color: rgb(121, 0, 121);
+                transition: all 0.8s;
+            }
+            &.fb:hover {
+                color: #4158D0;
+                transition: all 0.8s;
+            }
+            &.yt:hover {
+                color: red;
+                transition: all 0.8s;
+            }
+            
+            &.sp:hover {
+                color: rgb(5, 151, 5);
+                transition: all 0.8s;
+            }
+        }
+    }
 }
 
-.footer p {
-    font-size: 20px;
-    text-align: center;
-}
-.footer .mediacontainer{
-    text-align: center;
-    
-}
-
-.ig:hover {
-    color: rgb(121, 0, 121);
-    transition: all 0.8s;
-}
-
-.fb:hover {
-    color: #4158D0;
-    transition: all 0.8s;
-}
-
-.yt:hover {
-    color: red;
-    transition: all 0.8s;
-}
-
-.sp:hover {
-    color: rgb(5, 151, 5);
-    transition: all 0.8s;
-}
-
-.mediacontainer a {
-    text-decoration: none;
-    color: aliceblue;
-    font-size: 30px;
-}
 @media only screen and (min-width:576px) and (max-width:767px) {
 
     /* ---------------INDEX */
@@ -833,7 +762,7 @@ iframe{
     
         .item4 {
             grid-area: item4;
-            background-position: 50% 65%;
+            background-position: 50% 75%;
         }
     
         .item5 {
