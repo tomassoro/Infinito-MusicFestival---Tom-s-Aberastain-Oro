@@ -433,7 +433,7 @@ p{
 
 .fechas {
     margin-bottom: 40px;
-    
+    min-height: (100vh -31vh);
     h1{
         @include h2(aliceblue, center , 20px 0 )
     }
@@ -445,7 +445,7 @@ p{
             padding: 10px;
             
             button{
-                border-radius: 3px;
+                @include buttom(blue, aliceblue , orange)
             }
         }
     }
