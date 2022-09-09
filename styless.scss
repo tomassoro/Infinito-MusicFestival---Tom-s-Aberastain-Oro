@@ -278,7 +278,7 @@ p{
 }
 .pic2{
     @extend .imgcircartist;
-    @include imgcirc( url("imagenes/artistas2022/pixel-town-RRp0DaYAnsM-unsplash.jpg"), 50% 10% , cover )
+    @include imgcirc( url("imagenes/artistas2022/pixel-town-RRp0DaYAnsM-unsplash.jpg"), 50% 10% , cover );
 }
 
 .pic3{
@@ -311,7 +311,7 @@ p{
     @extend .imgfondoartist;
 }
 .pic10{
-    @include imgcirc( url("imagenes/artistas2022/luke-thornton-JNl7o-Mj2cc-unsplash.jpg"), 50% 10% , cover );
+    @include imgcirc( url("imagenes/artistas2022/luke-thornton-JNl7o-Mj2cc-unsplash.jpg"), 50% 10% , cover);
     @extend .imgcircartist;
 }
 .pic11{
@@ -353,7 +353,7 @@ p{
 /* ------------------Informacion---------------- */
 .informacion {
     padding: 50px;
-    background-image: url("imagenes/fondos/rsz_ticket-2974645_1920.jpg");
+    background-image: url(Imagenes/fondos/rsz_ticket-2974645_1920.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-color: rgb(58, 58, 58);
