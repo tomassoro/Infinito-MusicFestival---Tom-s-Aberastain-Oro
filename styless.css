@@ -379,10 +379,10 @@ p {
   background-color: #142692;
   background-image: linear-gradient(43deg, #142692 0%, #8b1283 46%, #dcb272 100%);
 }
-.btmedia :hover {
+.btmedia .buttommedia:hover {
   background-color: #36458b;
   background-image: linear-gradient(43deg, #36458b 0%, #89187e 46%, #ea9600 80%);
-  transition: all ease-in-out;
+  transition: all 800ms;
 }
 
 .mediaartist a {
@@ -394,7 +394,7 @@ p {
 /* ------------------Informacion---------------- */
 .informacion {
   padding: 50px;
-  background-image: url("imagenes/fondos/rsz_ticket-2974645_1920.jpg");
+  background-image: url(Imagenes/fondos/rsz_ticket-2974645_1920.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: rgb(58, 58, 58);
@@ -519,6 +519,7 @@ p {
 .fechas {
   margin-bottom: 40px;
   min-height: 100vh -31vh;
+  padding: 35px;
 }
 .fechas h1 {
   font-family: "Barlow Condensed", sans-serif;
@@ -533,24 +534,49 @@ p {
   background-color: rgba(0, 0, 0, 0.808);
   font-family: "Barlow Condensed", sans-serif;
   color: aliceblue;
+  align-items: center;
 }
 .fechas .contfechas section {
-  padding: 10px;
+  padding: 20px;
+}
+.fechas .contfechas section h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px rgb(36, 35, 35);
+  font-size: 1.8rem;
+  color: aliceblue;
+  text-align: center;
+  padding: none;
+  margin-bottom: 15px;
+  font-size: 2.6rem;
 }
 .fechas .contfechas section p {
+  padding: 0;
   font-size: 1.3rem;
   margin-bottom: 10px;
 }
-.fechas .contfechas section button {
-  background-color: aliceblue;
-  margin-bottom: 10px;
-  font-size: 1.1rem;
-  box-shadow: 1px 1px 10px black;
+.fechas .contfechas section ul {
+  padding-left: 20px;
+  list-style: none;
 }
-.fechas .contfechas section button:hover {
+.fechas .contfechas section .buttonfechas {
+  background-color: aliceblue;
+  margin: 0 0 20px 10px;
+  font-size: 1.1rem;
+  box-shadow: 1px 1px 10px rgb(75, 75, 75);
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  font-size: 1.2rem;
+}
+.fechas .contfechas section .buttonfechas:hover {
   background-color: orange;
-  color: aliceblue;
   transition: all 800ms;
+}
+.fechas .contfechas .map {
+  padding: 0 20px;
+  width: 100%;
+  height: 230px;
 }
 
 /*  -------------Footer --------------  */
@@ -761,16 +787,18 @@ p {
   }
   .item1 {
     grid-area: item1;
+    background-position: 50% 65%;
   }
   .item2 {
-    grid-area: item2;
+    grid-area: item4;
+    background-position: 50% 0%;
   }
   .item3 {
     grid-area: item3;
   }
   .item4 {
-    grid-area: item4;
-    background-position: 50% 75%;
+    grid-area: item2;
+    background-position: 50% 55%;
   }
   .item5 {
     grid-area: item5;

@@ -335,12 +335,13 @@ p{
         margin-bottom: 10px;
         background-color: #142692;
         background-image: linear-gradient(43deg, #142692 0%, #8b1283 46%, #dcb272 100%);
-    }
-    :hover{
-        background-color: #36458b;
-        background-image: linear-gradient(43deg, #36458b 0%, #89187e 46%, #ea9600 80%);
-        transition: all ease-in-out;
-    
+
+        &:hover{
+            background-color: #36458b;
+            background-image: linear-gradient(43deg, #36458b 0%, #89187e 46%, #ea9600 80%);
+            transition: all 800ms;
+        
+        }
     }
 }
 .mediaartist a{
@@ -439,6 +440,7 @@ p{
 .fechas {
     margin-bottom: 40px;
     min-height: (100vh -31vh);
+    padding: 35px;
     h1{
         @include h2(aliceblue, center , 20px 0 )
     }
@@ -446,23 +448,44 @@ p{
         background-color: rgba(0, 0, 0, 0.808);
         font-family: 'Barlow Condensed', sans-serif;
         color: aliceblue;
+        align-items: center;
+
         section{
-            padding: 10px;
+            padding: 20px;
+            h2{
+                @include h3(aliceblue, center , none );
+                margin-bottom: 15px;
+
+                font-size: 2.6rem;
+            }
             p{
+                padding: 0;
                 font-size: 1.3rem;
                 margin-bottom: 10px;
             }
-            button{
+            ul{
+                padding-left: 20px;
+                list-style: none;
+            }
+            .buttonfechas{
                 background-color: aliceblue;
-                margin-bottom: 10px;
+                margin: 0 0 20px 10px;
                 font-size: 1.1rem;
-                box-shadow: 1px 1px 10px black;
+                box-shadow: 1px 1px 10px rgb(75, 75, 75);
+                border-radius: 5px;
+                border: none;
+                padding: 5px;
+                font-size: 1.2rem;
                 &:hover{
                     background-color: orange;
-                    color: aliceblue;
                     transition: all 800ms;
                 }
             }
+        }
+        .map{
+            padding: 0 20px;
+            width: 100%;
+            height: 230px;
         }
     }
 
@@ -726,10 +749,12 @@ p{
     
         .item1 {
             grid-area: item1;
+            background-position: 50% 65% ;
         }
     
         .item2 {
-            grid-area: item2;
+            grid-area: item4;
+            background-position: 50% 0%;
         }
     
         .item3 {
@@ -737,8 +762,8 @@ p{
         }
     
         .item4 {
-            grid-area: item4;
-            background-position: 50% 75%;
+            grid-area: item2;
+            background-position: 50% 55%;
         }
     
         .item5 {
