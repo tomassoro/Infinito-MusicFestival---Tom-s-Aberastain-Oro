@@ -394,7 +394,7 @@ p {
 /* ------------------Informacion---------------- */
 .informacion {
   padding: 50px;
-  background-image: url(Imagenes/fondos/rsz_ticket-2974645_1920.jpg);
+  background-image: url("Imagenes/fondos/rsz_ticket-2974645_1920.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: rgb(58, 58, 58);
@@ -468,7 +468,7 @@ p {
 }
 
 .item1 {
-  background-image: url("imagenes/locaciones/colin-lloyd-eiQqGBAMgIE-unsplash.jpg");
+  background-image: url("Imagenes/locaciones/colin-lloyd-eiQqGBAMgIE-unsplash.jpg");
   background-size: cover;
   background-position: 45% 26%;
 }
@@ -480,37 +480,37 @@ p {
 }
 
 .item3 {
-  background-image: url("imagenes/locaciones/jakob-owens-YSFk5awhcec-unsplash.jpg");
+  background-image: url("Imagenes/locaciones/jakob-owens-YSFk5awhcec-unsplash.jpg");
   background-size: cover;
   background-position: 35% 65%;
 }
 
 .item4 {
-  background-image: url("imagenes/locaciones/muneeb-syed-4_M8uIfPEZw-unsplash.jpg");
+  background-image: url("Imagenes/locaciones/muneeb-syed-4_M8uIfPEZw-unsplash.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .item5 {
-  background-image: url("imagenes/locaciones/nicholas-green-nPz8akkUmDI-unsplash.jpg");
+  background-image: url("Imagenes/locaciones/nicholas-green-nPz8akkUmDI-unsplash.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .item6 {
-  background-image: url("imagenes/locaciones/sebastian-ervi-Qq2h76kYRFI-unsplash.jpg");
+  background-image: url("Imagenes/locaciones/sebastian-ervi-Qq2h76kYRFI-unsplash.jpg");
   background-size: cover;
   background-position: 45% 55%;
 }
 
 .item7 {
-  background-image: url("imagenes/locaciones/tajmia-loiacono-Zc4y1upPN00-unsplash.jpg");
+  background-image: url("Imagenes/locaciones/tajmia-loiacono-Zc4y1upPN00-unsplash.jpg");
   background-size: cover;
   background-position: 50% 45%;
 }
 
 .item8 {
-  background-image: url("imagenes/locaciones/simon-boxus-xoD9JhFMtGM-unsplash.jpg");
+  background-image: url("Imagenes/locaciones/simon-boxus-xoD9JhFMtGM-unsplash.jpg");
   background-size: cover;
   background-position: 30% 55%;
 }

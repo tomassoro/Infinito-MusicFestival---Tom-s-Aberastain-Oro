@@ -354,7 +354,7 @@ p{
 /* ------------------Informacion---------------- */
 .informacion {
     padding: 50px;
-    background-image: url(Imagenes/fondos/rsz_ticket-2974645_1920.jpg);
+    background-image: url("Imagenes/fondos/rsz_ticket-2974645_1920.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: rgb(58, 58, 58);
@@ -412,28 +412,28 @@ p{
     background-position: $position;    
 }
 .item1 {
-    @include itemimg( url("imagenes/locaciones/colin-lloyd-eiQqGBAMgIE-unsplash.jpg"), 45% 26%)
+    @include itemimg( url("Imagenes/locaciones/colin-lloyd-eiQqGBAMgIE-unsplash.jpg"), 45% 26%)
 }
 .item2 {
     @include itemimg(  url("Imagenes/locaciones/danny-howe-bn-D2bCvpik-unsplash.jpg"), center)
 }
 .item3 {
-    @include itemimg(url("imagenes/locaciones/jakob-owens-YSFk5awhcec-unsplash.jpg"), 35% 65% )
+    @include itemimg(url("Imagenes/locaciones/jakob-owens-YSFk5awhcec-unsplash.jpg"), 35% 65% )
 }
 .item4 {
-    @include itemimg(url("imagenes/locaciones/muneeb-syed-4_M8uIfPEZw-unsplash.jpg"),center )
+    @include itemimg(url("Imagenes/locaciones/muneeb-syed-4_M8uIfPEZw-unsplash.jpg"),center )
 }
 .item5 {
-    @include itemimg( url("imagenes/locaciones/nicholas-green-nPz8akkUmDI-unsplash.jpg"), center)
+    @include itemimg( url("Imagenes/locaciones/nicholas-green-nPz8akkUmDI-unsplash.jpg"), center)
 }
 .item6 {
-    @include itemimg(url("imagenes/locaciones/sebastian-ervi-Qq2h76kYRFI-unsplash.jpg"), 45% 55% )
+    @include itemimg(url("Imagenes/locaciones/sebastian-ervi-Qq2h76kYRFI-unsplash.jpg"), 45% 55% )
 }
 .item7 {
-    @include itemimg(url("imagenes/locaciones/tajmia-loiacono-Zc4y1upPN00-unsplash.jpg"),50% 45% )
+    @include itemimg(url("Imagenes/locaciones/tajmia-loiacono-Zc4y1upPN00-unsplash.jpg"),50% 45% )
 }
 .item8 {
-    @include itemimg(url("imagenes/locaciones/simon-boxus-xoD9JhFMtGM-unsplash.jpg"), 30% 55%)
+    @include itemimg(url("Imagenes/locaciones/simon-boxus-xoD9JhFMtGM-unsplash.jpg"), 30% 55%)
 }
 /* -----Proximas Fechas---------------- */
 
