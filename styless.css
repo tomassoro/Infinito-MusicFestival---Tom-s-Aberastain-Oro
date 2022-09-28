@@ -535,9 +535,12 @@ p {
   font-family: "Barlow Condensed", sans-serif;
   color: aliceblue;
   align-items: center;
+  padding: 0;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
 }
 .fechas .contfechas section {
-  padding: 20px;
+  padding: 0 20px;
 }
 .fechas .contfechas section h2 {
   font-family: "Barlow Condensed", sans-serif;
@@ -547,21 +550,49 @@ p {
   color: aliceblue;
   text-align: center;
   padding: none;
-  margin-bottom: 15px;
+  margin: 10px 0;
   font-size: 2.6rem;
 }
-.fechas .contfechas section p {
+.fechas .contfechas section h4 {
+  margin-top: 5px;
+}
+.fechas .contfechas section .descplace {
+  margin: 10px 0 10px;
+  order: -1;
   padding: 0;
-  font-size: 1.3rem;
-  margin-bottom: 10px;
+  font-size: 2.2rem;
 }
 .fechas .contfechas section ul {
-  padding-left: 20px;
+  margin-top: 10px;
+  text-align: left;
   list-style: none;
+}
+.fechas .contfechas section ul li {
+  padding: 0 0 0 20px;
+  list-style: none;
+}
+.fechas .contfechas section .imgfechas, .fechas .contfechas section .fecha3 .imgfechas3, .fechas .contfechas section .fecha2 .imgfechas2, .fechas .contfechas section .fecha1 .imgfechas1 {
+  order: 1;
+  margin: 0 0 20px;
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+}
+.fechas .contfechas section .fecha1 {
+  margin-top: 20px;
+}
+.fechas .contfechas section .fecha1 .imgfechas1 {
+  background-image: url("Imagenes/locaciones/simon-boxus-xoD9JhFMtGM-unsplash.jpg");
+}
+.fechas .contfechas section .fecha2 .imgfechas2 {
+  background-image: url("Imagenes/locaciones/danny-howe-bn-D2bCvpik-unsplash.jpg");
+}
+.fechas .contfechas section .fecha3 .imgfechas3 {
+  background-image: url("Imagenes/locaciones/jakob-owens-YSFk5awhcec-unsplash.jpg");
 }
 .fechas .contfechas section .buttonfechas {
   background-color: aliceblue;
-  margin: 0 0 20px 10px;
+  margin: 0 0 10px;
   font-size: 1.1rem;
   box-shadow: 1px 1px 10px rgb(75, 75, 75);
   border-radius: 5px;
@@ -573,7 +604,7 @@ p {
   background-color: orange;
   transition: all 800ms;
 }
-.fechas .contfechas .map {
+.fechas .contfechas section .map {
   padding: 0 20px;
   width: 100%;
   height: 230px;
